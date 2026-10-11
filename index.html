@@ -174,99 +174,52 @@
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
   "practical": {
-    "title": "Single-Story Search, Flow Path & Victim Removal",
-    "objective": "Coordinate first-line advancement, oriented search, flow-path control, and rapid victim removal in a Florida slab-on-grade residence.",
-    "nfpa": "NFPA 1403 training safety · NFPA 1710 deployment · NFPA 1500 occupational safety",
-    "equipment": [
-      "Engine and charged 1¾-inch hoseline",
-      "Full PPE and SCBA",
-      "Thermal imaging camera",
-      "Search rope or oriented-search hand tools",
-      "Victim manikin",
-      "Door-control prop or inward-swinging training door",
-      "Cones and portable radio for each team"
-    ],
+    "title": "Blocking-Position Defense: Highway Apparatus Placement",
+    "objective": "Position the apparatus as a protective shield at a roadway incident so the rig — not the crew — absorbs an impact.",
+    "nfpa": "NFPA 1451 vehicle operations training · NFPA 1500 occupational safety",
+    "equipment": ["Engine or ladder for blocking", "20+ traffic cones", "Reflective traffic safety vests for every participant", "Arrow board or emergency scene lighting", "Wheel chocks", "Portable radio", "Stopwatch", "Training manikin or gear pile marking the 'work zone'"],
     "steps": [
-      "Stage a smoke-limited single-story layout with no basement or below-grade component.",
-      "Transmit a complete on-scene report, establish command, and assign attack, search, and accountability functions.",
-      "Advance the first line to confine the fire while a two-person search team controls the entry door and begins an oriented primary search.",
-      "Locate, package, and remove the victim through the shortest tenable route while maintaining crew integrity and air awareness.",
-      "Complete a PAR, transfer the victim to EMS, and conduct a short after-action review tied to the benchmark."
+      "Spot the blocking apparatus upstream of the incident zone on the closed course: 45-degree angle, wheels turned away from traffic, parking brake set, wheels chocked.",
+      "Build the advance-warning taper: first cone placed for speed, full taper complete before anyone exits the cab.",
+      "Exit and work only on the non-traffic side; establish the work zone behind the apparatus.",
+      "Post a lookout upstream with a whistle; when the lookout signals a breach, everyone moves to the pre-planned shelter side.",
+      "Demonstrate the lighting wall: full emergency lighting on, arrow board directing traffic away from the closed lane.",
+      "Pick up the taper in reverse order — cone truck last, never a person walking a live lane."
     ],
-    "safety": "Use training smoke only; no live fire. Assign a safety officer, maintain two-in/two-out, enforce crew integrity, and stop immediately for lost communication, low-air alarms, heat stress, or an uncontrolled flow path.",
-    "benchmark": "Benchmark: water on the seat within 90 seconds of entry; primary search complete and victim outside within 4 minutes; PAR accurate on the first request.",
-    "relatedSops": [
-      "SOP 600-02 — Response, Placement, And Company Functions",
-      "SOP 600-04 — Protective Clothing Requirement And Scba Use",
-      "SOP 600-11 — Accountability System"
-    ]
+    "safety": "Closed course only — no live-traffic blocking drills. Vests on every participant; assigned safety officer; stand down for lightning; treat the shelter drill as a no-fail evolution.",
+    "benchmark": "Full blocking position established within 90 seconds of arrival; zero personnel crossings of the traffic lane during setup and teardown.",
+    "relatedSops": ["SOP 600-35 — Apparatus Placement / Temporary", "SOP 600-03 — Safety"]
   },
   "tabletop": {
-    "title": "Garden-Apartment Fire with Reports of a Trapped Child",
-    "scenario": "At 9:20 p.m., crews arrive at a two-story, wood-frame garden apartment with fire showing from a first-floor unit and smoke entering the common stair. A resident reports a child may still be inside. Wind is pushing from the courtyard toward the rear apartments.",
+    "title": "The Medical Mayday: Firefighter Down, No Collapse",
+    "scenario": "On a working structure fire in a single-story Florida slab-on-grade home, a 19-year veteran on Engine 1 begins showing signs of distress during knockdown, stays on the line, and waves off concern. Two hours later, on a medical call, he shows signs of a stroke. You are his crew.",
     "injects": [
-      {
-        "time": "0 MIN",
-        "text": "First-due engine arrives to fire showing from the first-floor living-room window; one resident reports a child unaccounted for."
-      },
-      {
-        "time": "4 MIN",
-        "text": "The attack crew reports fire extending into the hallway; the search team has entered from the protected side."
-      },
-      {
-        "time": "8 MIN",
-        "text": "A neighboring unit reports smoke entering from the attic space, and the first line drops below half a tank."
-      },
-      {
-        "time": "12 MIN",
-        "text": "Command loses radio contact with the search team for one transmission cycle as conditions worsen at the common stair."
-      }
+      { "time": "0 MIN", "text": "On the porch during overhaul, the veteran firefighter is pale and quiet, tells you he's 'just overheated.'" },
+      { "time": "2 MIN", "text": "Back in quarters, he is slow to answer questions and his speech sounds off." },
+      { "time": "6 MIN", "text": "On the next medical call, his face droops on one side and he can't hold the radio upright." },
+      { "time": "10 MIN", "text": "He is being transported. The chief asks what the department does next — and what it should have done an hour ago." }
     ],
     "questions": [
-      {
-        "group": "Firefighters",
-        "items": [
-          "What door-control and hose-position choices limit the flow path to the common stair?",
-          "How will the search team maintain orientation, air awareness, and communication?",
-          "What radio report is required when the child is located and removal begins?"
-        ]
-      },
-      {
-        "group": "Officers",
-        "items": [
-          "How will command separate fire attack, search, exposure, and accountability functions with the arriving resources?",
-          "Which conditions trigger a tactical withdrawal or emergency retreat?",
-          "When should RIC be assigned, and what information must be ready if a mayday occurs?"
-        ]
-      }
+      { "group": "Firefighters", "items": ["When does 'I'm fine' stop being an acceptable answer from a crew member on scene?", "What stroke signs can you check in under 60 seconds with no tools?", "Who speaks up first — the officer, the senior firefighter, or the closest buddy?"] },
+      { "group": "Officers", "items": ["At what point do you pull a firefighter off the line over their own objection?", "How does rehab medical monitoring change when a member shows distress?", "What are your first four moves after a serious firefighter injury — notification, scene preservation, family, CISM?"] }
     ],
-    "teachingPoints": [
-      "The initial radio report should identify occupancy, fire location, life hazard, strategy, command, and resource needs.",
-      "Protect the primary egress and control doors before ventilation changes the flow path.",
-      "Search and attack objectives must be coordinated but independently tracked.",
-      "Low-air, lost contact, or deteriorating structural conditions are early decision points—not late surprises.",
-      "A PAR after a strategic shift confirms that every crew is accounted for."
-    ],
-    "relatedSops": [
-      "SOP 600-01 — Incident Command System",
-      "SOP 600-06 — Size-Up And On-Scene Radio Reports",
-      "SOP 600-13 — Rapid Intervention Crew (Ric)"
-    ]
+    "teachingPoints": ["A firefighter in medical distress who stays working is a mayday the same as a collapse — intervene early.", "Stroke and cardiac events are the leading fire-service killers; learn the FAST screen and act on it.", "On-scene rehab includes medical monitoring of our own — not just water and rest.", "Serious injury and LODD response starts with notification discipline: family before media, every time.", "Return to duty after cancer or cardiac treatment is never the end of the watch."],
+    "relatedSops": ["SOP 600-34 — Serious Illness/Injury/Line Of Duty Death", "SOP 600-12 — Rehabilitation"]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "October 10, 2026",
+  "updatedThrough": "October 11, 2026",
   "totals": {
     "lodd": {
-      "total": 67,
-      "sub": "29 INCIDENT-RELATED · 31 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 62 NATIONAL"
+      "total": 68,
+      "sub": "29 INCIDENT-RELATED · 32 MEDICAL · 7 CAUSE PENDING · 5 FLORIDA · 63 NATIONAL"
     },
     "crash": {
-      "total": 30,
-      "sub": "7 FATAL · 14 SERIOUS · 9 MINOR"
+      "total": 31,
+      "sub": "7 FATAL · 15 SERIOUS · 9 MINOR"
     },
     "rescue": {
       "total": 17,
@@ -4901,31 +4854,73 @@ const DASHBOARD_DATA = {
           "title": "Size-Up And On-Scene Radio Reports"
         }
       ]
+    },
+    {
+      "category": "lodd",
+      "state": "IA",
+      "sort": "2026-10-08",
+      "month": 10,
+      "department": "Council Bluffs Fire Department",
+      "date": "October 8, 2026",
+      "outcome": "A firefighter/paramedic with 19 years of service suffered an on-duty medical emergency (stroke) while working a structure fire on October 5 and died in the hospital on October 8.",
+      "url": "https://www.firehouse.com/lodds/news/55410725/council-bluffs-ia-firefighter-dies-after-responding-to-fire",
+      "sops": [
+        {
+          "number": "600-34",
+          "title": "Serious Illness/Injury/Line Of Duty Death"
+        }
+      ]
+    },
+    {
+      "category": "crash",
+      "state": "ON",
+      "sort": "2026-10-10",
+      "month": 10,
+      "department": "Clarington Emergency and Fire Services (Ontario, Canada)",
+      "date": "October 10, 2026",
+      "outcome": "A tractor-trailer struck the department's apparatus as it blocked for an accident scene on Highway 401 near Newtonville Road; two of the four firefighters aboard were transported with non-life-threatening injuries; the apparatus sustained extensive damage.",
+      "url": "https://www.fireapparatusmagazine.com/fire-apparatus/two-ffs-injured-when-tractor-trailer-strikes-fire-apparatus-at-accident-scene/",
+      "sops": [
+        {
+          "number": "600-35",
+          "title": "Apparatus Placement / Temporary"
+        },
+        {
+          "number": "600-03",
+          "title": "Safety"
+        }
+      ]
     }
   ],
   "drill": {
-    "title": "Single-Story Search, Flow Path & Victim Removal",
-    "intro": "Coordinate first-line advancement, oriented search, and victim removal in a Florida slab-on-grade residence.",
+    "title": "Blocking-Position Defense: Highway Apparatus Placement",
+    "intro": "Position the apparatus as a protective shield at a roadway incident so the rig — not the crew — absorbs an impact.",
     "steps": [
-      "Transmit the on-scene report, establish command, and assign attack, search, and accountability.",
-      "Advance the first line while the search team controls the entry door and begins an oriented primary search.",
-      "Locate and remove the victim through the shortest tenable route while maintaining crew integrity.",
-      "Complete a PAR and debrief the four-minute victim-removal benchmark."
+      "Angle the blocking apparatus upstream of the incident zone, wheels turned away from traffic, brake set, wheels chocked.",
+      "Build a full advance-warning taper with cones and arrow lighting before any crew exits the cab.",
+      "Exit and work only on the non-traffic side; keep the crew in the work zone behind the apparatus.",
+      "Post an upstream lookout and rehearse the shelter drill for a taper breach; tear the taper down in reverse order."
     ],
-    "nfpa": "NFPA 1403 training safety · NFPA 1710 deployment · NFPA 1500 occupational safety",
+    "nfpa": "NFPA 1451 vehicle operations training · NFPA 1500 occupational safety",
     "relatedSops": [
-      "SOP 600-02 — Response, Placement, And Company Functions",
-      "SOP 600-04 — Protective Clothing Requirement And Scba Use",
-      "SOP 600-11 — Accountability System"
+      "SOP 600-35 — Apparatus Placement / Temporary",
+      "SOP 600-03 — Safety"
     ]
   },
   "daily": [
     {
-      "tag": "RESCUE",
-      "department": "Minneapolis Fire Department (MN)",
+      "tag": "LODD",
+      "department": "Council Bluffs Fire Department (IA)",
       "date": "October 8, 2026",
-      "outcome": "Firefighters pulled one resident from a burning home. The resident was transported in critical condition. Before crews arrived, a state patrol trooper rescued two other residents from the home and was treated for smoke inhalation.",
-      "url": null
+      "outcome": "A firefighter/paramedic with 19 years of service suffered an on-duty medical emergency (stroke) while working a structure fire on October 5 and died in the hospital on October 8.",
+      "url": "https://www.firehouse.com/lodds/news/55410725/council-bluffs-ia-firefighter-dies-after-responding-to-fire"
+    },
+    {
+      "tag": "CRASH",
+      "department": "Clarington Emergency and Fire Services (Ontario, Canada)",
+      "date": "October 10, 2026",
+      "outcome": "A tractor-trailer struck the department's apparatus as it blocked for an accident scene on Highway 401 near Newtonville Road; two of the four firefighters aboard were transported with non-life-threatening injuries; the apparatus sustained extensive damage.",
+      "url": "https://www.fireapparatusmagazine.com/fire-apparatus/two-ffs-injured-when-tractor-trailer-strikes-fire-apparatus-at-accident-scene/"
     }
   ]
 };
