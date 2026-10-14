@@ -185,46 +185,158 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "October 13, 2026",
+  "updatedThrough": "October 14, 2026",
   "practical": {
-    "title": "Window Rescue: Ground Ladders and Victim Removal",
-    "objective": "Raise ground ladders to a first and second story window of a single-story and two-story Florida residential layout, enter, locate a victim with a TIC, and remove the victim safely through the window and down the ladder.",
+    "title": "Kill the Power Safely: Utility Control and Electrical Hazards",
+    "duration": "20-45 minutes",
+    "objective": "Locate, isolate, and verify building utilities at a working commercial fire without contacting energized equipment, using lock-out/tag-out and a utility-company request.",
     "nfpa": "NFPA 1001 · NFPA 1500",
-    "equipment": ["24 ft and 14 ft ground ladders", "Rescue manikin", "Thermal imaging camera", "Webbing and carabiners", "Cones or tape for layout marking", "Stopwatch", "Radio for PAR"],
-    "steps": [
-      "Size up: officer confirms window, ladder length, footing on slab or pavement, overhead wires, and assigns a ladder team and an interior team.",
-      "Raise: two firefighters raise the 24 ft ladder to the second-story window, heel and secure it, and climb with a TIC and webbing.",
-      "Enter and search: enter the window, isolate the room if possible, sweep with the TIC, and locate the manikin.",
-      "Package: secure the manikin with webbing, communicate the removal plan and a PAR to command.",
-      "Remove: move the manikin through the window and down the ladder with a firefighter controlling the descent, keeping three points of contact.",
-      "Reset and rotate: lower, inspect the ladder and beams for damage, and rotate crews so every member raises, climbs, and controls a removal."
+    "equipment": [
+      "De-energized training disconnect prop",
+      "Lock-out/tag-out kit (locks, hasps, and tags)",
+      "Thermal imaging camera",
+      "Four-gas monitor",
+      "Portable radio for PAR",
+      "Full PPE and SCBA for all participants",
+      "Stopwatch"
     ],
-    "safety": "Full PPE and SCBA on air for entry crews; no live fire; spotter heels every ladder at all times; check for overhead power lines before raising; enforce rehab and hydration for Florida heat; stop the evolution for any ladder footing slip.",
-    "benchmark": "Two-firefighter 24 ft ladder raise and secured in under 90 seconds; manikin located, packaged, and removed through the window in under 5 minutes per rotation.",
-    "relatedSops": ["SOP 600-02 — Response, Placement, And Company Functions", "SOP 600-04 — Protective Clothing Requirement And Scba Use", "SOP 600-03 — Safety"]
+    "steps": [
+      "Size-up: identify the service drop, meter, and electrical rooms on arrival and assign a utilities officer.",
+      "Locate the main disconnect from a safe position and simulate a utility-company request, including the ETA.",
+      "Demonstrate lock-out/tag-out on a de-energized training prop and verbalize verification of zero energy.",
+      "Sweep with a TIC and gas monitor around the electrical area without touching energized parts.",
+      "Practice the withdrawal call and PAR if arcing, shock, or collapse indicators appear.",
+      "Reset and rotate so every member locates a disconnect, applies a lock/tag, and gives the utilities report."
+    ],
+    "safety": "Never cut or pull a meter; treat all conductors as energized until the utility confirms isolation; full PPE/SCBA.",
+    "benchmark": "Crew locates and safely isolates the training prop and completes lock/tag and report in under 5 minutes with zero contact with energized parts.",
+    "relatedSops": [
+      "SOP 600-03 — Safety",
+      "SOP 600-04 — Protective Clothing Requirement And Scba Use",
+      "SOP 600-01 — Incident Command System"
+    ]
   },
   "tabletop": {
-    "title": "Left the Roadway: Rollover Prevention and Post-Crash Response",
-    "scenario": "9:40 PM. Your engine is responding lights and sirens on a wet two-lane rural road to a vehicle and grass fire. The driver is experienced but tired at the end of a busy shift. A pickup pulls out from a side road, the engine swerves, the right wheels drop off the pavement, and the apparatus rolls onto its side in a ditch. One firefighter is trapped and unresponsive, one is ambulatory, and the driver is dazed. You are the company officer.",
-    "nfpa": "NFPA 1451 · NFPA 1500",
+    "title": "Six EVs on Fire: Dealership Lot, Hour 1 to Hour 17",
+    "duration": "15-20 minutes",
+    "scenario": "Multiple electric vehicles burning in a Florida auto dealership lot at night, with exposures to the showroom, thermal runaway re-ignition, and a long-duration water and rehab operation.",
+    "nfpa": "NFPA 1500 · NFPA 1584",
     "injects": [
-      { "time": "T+0", "text": "You are first to regain your bearings inside the rolled apparatus. What are your first five actions in order, including seatbelt status, a mayday or emergency traffic call using the 3 W's, and shutting down the apparatus?" },
-      { "time": "T+5", "text": "Dispatch confirms help is coming but the location is rural and the next engine is 12 minutes out. A civilian bystander is trying to climb on the apparatus. How do you control the scene, traffic, and bystanders with an injured crew?" },
-      { "time": "T+10", "text": "Command arrives and confirms one firefighter has died at the scene. What notifications, scene preservation, and documentation steps start now, and what is NOT said on the radio or to media?" },
-      { "time": "T+15", "text": "Back at the station the next morning, the crew asks what could have prevented this. Walk through speed for conditions, seatbelt discipline, fatigue, load and tire checks, and what the department reviews after any apparatus crash." }
+      {
+        "time": "0 min",
+        "text": "Dispatch and first size-up: six electric vehicles are involved in the dealership lot. What are your first actions, apparatus placement, and initial notifications?"
+      },
+      {
+        "time": "5 min",
+        "text": "One vehicle re-ignites and exposures to the showroom heat up. How do you re-prioritize water and protect the exposure?"
+      },
+      {
+        "time": "10 min",
+        "text": "Water supply and runoff concerns grow and crews need rehab rotation. How do you sustain supply, manage runoff, and rotate companies?"
+      },
+      {
+        "time": "15 min",
+        "text": "Command decides the defensive posture, notifications, and the extended operations plan. What does the next several hours look like?"
+      }
     ],
     "questions": [
-      { "group": "Firefighters", "items": ["Are you belted every time the apparatus moves, including short repositioning moves?", "What does dropping a wheel off the pavement demand: steer back hard, or slow, hold, and ease back?", "What do you do in the first minute after a rollover involving your own crew?"] },
-      { "group": "Officers", "items": ["How do you enforce seatbelt and speed discipline without waiting for a crash?", "Who owns notifications, family liaison, and scene preservation after a fatal apparatus crash?", "When is an apparatus placed out of service and investigated before anyone moves it?"] }
+      {
+        "group": "Firefighters",
+        "items": [
+          "How do you cool a burning EV battery pack, and from what distance do you apply water?",
+          "What signs tell you a vehicle is about to re-ignite, and what does the re-ignition watch look like hour after hour?",
+          "Where do you position to stay clear of venting gases, projectiles, and runoff while staying effective?"
+        ]
+      },
+      {
+        "group": "Officers",
+        "items": [
+          "How do you secure and sustain water supply for an operation that may run many hours?",
+          "How do you build rehab rotation into the plan from the first hour, not after crews are spent?",
+          "When is an EV blanket appropriate, as a thermal-runaway last resort only, and why never on a fully involved vehicle?",
+          "Which agency notifications go out, and when: hazmat, utility, law enforcement, dealership ownership, and county resources?"
+        ]
+      }
     ],
-    "teachingPoints": ["Seatbelts are the single biggest survival factor in a rollover; no belt, no move.", "Slow for wet rural roads at night; arriving 30 seconds later beats not arriving.", "If a wheel drops off the pavement, slow and ease back; a hard swerve back is what rolls apparatus.", "First actions after a crash: account for the crew, call for help with the 3 W's, control traffic, and preserve the scene.", "Fatal crash notifications follow department SOP and family notification comes before any public release."],
-    "relatedSops": ["SOP 600-34 — Serious Illness/Injury/Line Of Duty Death", "SOP 600-03 — Safety", "SOP 600-02 — Response, Placement, And Company Functions"]
+    "teachingPoints": [
+      "Expect re-ignition: thermal runaway can restart a pack long after knockdown.",
+      "Protect exposures first: the showroom and uninvolved vehicles outrank cars already lost.",
+      "Plan for hours, not minutes: sustained water supply, relief crews, and lighting for night operations.",
+      "Rotate crews through rehab on a schedule, not when they drop.",
+      "Document a fire watch plan with re-check intervals before clearing the scene."
+    ],
+    "relatedSops": [
+      "SOP 600-20 — Hazardous Materials Initial Response",
+      "SOP 600-12 — Rehabilitation",
+      "SOP 600-02 — Response, Placement, And Company Functions"
+    ]
   }
 };
 /* DAILY-DRILLS-END */
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+  {
+    date:"October 14, 2026",sort:"2026-10-14-2",type:"Practical",topic:"Utility control and electrical hazards",title:"Kill the Power Safely: Utility Control and Electrical Hazards",
+    summary:"Locate, isolate, and verify building utilities at a working commercial fire without contacting energized equipment, using lock-out/tag-out and a utility-company request.",nfpa:["NFPA 1001","NFPA 1500"],
+    sops:["SOP 600-03 — Safety", "SOP 600-04 — Protective Clothing Requirement And Scba Use", "SOP 600-01 — Incident Command System"],complete:true,
+    duration:"20-45 minutes",
+    equipment:["De-energized training disconnect prop", "Lock-out/tag-out kit (locks, hasps, and tags)", "Thermal imaging camera", "Four-gas monitor", "Portable radio for PAR", "Full PPE and SCBA for all participants", "Stopwatch"],
+    steps:[
+          "Size-up: identify the service drop, meter, and electrical rooms on arrival and assign a utilities officer.",
+          "Locate the main disconnect from a safe position and simulate a utility-company request, including the ETA.",
+          "Demonstrate lock-out/tag-out on a de-energized training prop and verbalize verification of zero energy.",
+          "Sweep with a TIC and gas monitor around the electrical area without touching energized parts.",
+          "Practice the withdrawal call and PAR if arcing, shock, or collapse indicators appear.",
+          "Reset and rotate so every member locates a disconnect, applies a lock/tag, and gives the utilities report."
+    ],
+    safety:"Never cut or pull a meter; treat all conductors as energized until the utility confirms isolation; full PPE/SCBA.",
+    benchmark:"Crew locates and safely isolates the training prop and completes lock/tag and report in under 5 minutes with zero contact with energized parts."
+  },
+  {
+    date:"October 14, 2026",sort:"2026-10-14-1",type:"Tabletop",topic:"Electric vehicle fires and long-duration operations",title:"Six EVs on Fire: Dealership Lot, Hour 1 to Hour 17",
+    summary:"Multiple electric vehicles burning in a Florida auto dealership lot at night, with exposures to the showroom, thermal runaway re-ignition, and a long-duration water and rehab operation.",nfpa:["NFPA 1500","NFPA 1584"],
+    sops:["SOP 600-20 — Hazardous Materials Initial Response", "SOP 600-12 — Rehabilitation", "SOP 600-02 — Response, Placement, And Company Functions"],complete:true,
+    duration:"15-20 minutes",
+    injects:[
+          {
+                "time": "0 min",
+                "text": "Dispatch and first size-up: six electric vehicles are involved in the dealership lot. What are your first actions, apparatus placement, and initial notifications?"
+          },
+          {
+                "time": "5 min",
+                "text": "One vehicle re-ignites and exposures to the showroom heat up. How do you re-prioritize water and protect the exposure?"
+          },
+          {
+                "time": "10 min",
+                "text": "Water supply and runoff concerns grow and crews need rehab rotation. How do you sustain supply, manage runoff, and rotate companies?"
+          },
+          {
+                "time": "15 min",
+                "text": "Command decides the defensive posture, notifications, and the extended operations plan. What does the next several hours look like?"
+          }
+    ],
+    questions:[
+          {
+                "group": "Firefighters",
+                "items": [
+                      "How do you cool a burning EV battery pack, and from what distance do you apply water?",
+                      "What signs tell you a vehicle is about to re-ignite, and what does the re-ignition watch look like hour after hour?",
+                      "Where do you position to stay clear of venting gases, projectiles, and runoff while staying effective?"
+                ]
+          },
+          {
+                "group": "Officers",
+                "items": [
+                      "How do you secure and sustain water supply for an operation that may run many hours?",
+                      "How do you build rehab rotation into the plan from the first hour, not after crews are spent?",
+                      "When is an EV blanket appropriate, as a thermal-runaway last resort only, and why never on a fully involved vehicle?",
+                      "Which agency notifications go out, and when: hazmat, utility, law enforcement, dealership ownership, and county resources?"
+                ]
+          }
+    ],
+    teachingPoints:["Expect re-ignition: thermal runaway can restart a pack long after knockdown.", "Protect exposures first: the showroom and uninvolved vehicles outrank cars already lost.", "Plan for hours, not minutes: sustained water supply, relief crews, and lighting for night operations.", "Rotate crews through rehab on a schedule, not when they drop.", "Document a fire watch plan with re-check intervals before clearing the scene."]
+  },
   {
     date:"2026-10-13",sort:"2026-10-13-2",type:"Practical",topic:"Ladder operations and window victim removal",title:"Window Rescue: Ground Ladders and Victim Removal",
     summary:"Raise ground ladders to a first and second story window of a single-story and two-story Florida residential layout, enter, locate a victim with a TIC, and remove the victim safely through the window and down the ladder.",nfpa:["NFPA 1001","NFPA 1500"],
@@ -350,7 +462,7 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "October 13, 2026",
+  "updatedThrough": "October 14, 2026",
   "totals": {
     "lodd": {
       "total": 69,
@@ -361,19 +473,63 @@ const DASHBOARD_DATA = {
       "sub": "8 FATAL · 14 SERIOUS · 9 MINOR"
     },
     "rescue": {
-      "total": 19,
-      "sub": "6 FLORIDA · 13 NATIONAL"
+      "total": 20,
+      "sub": "6 FLORIDA · 14 NATIONAL"
     },
     "mayday": {
       "total": 79,
       "sub": "73 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 12,
-      "sub": "5 FLORIDA · 7 NATIONAL"
+      "total": 13,
+      "sub": "5 FLORIDA · 8 NATIONAL"
     }
   },
   "incidents": [
+    {
+      "category": "rescue",
+      "state": "MI",
+      "sort": "2026-10-13",
+      "month": 10,
+      "department": "Port Huron Fire Department (MI)",
+      "date": "October 13, 2026",
+      "outcome": "Firefighters rescued an occupant from an adjoining apartment during a fire that destroyed a mixed-use business and apartment building; no injuries were reported and the cause is under investigation.",
+      "url": "https://www.thetimesherald.com/story/news/local/2026/10/13/port-huron-michigan-fire-destroys-apartment-and-business/92231224007/",
+      "sops": [
+        {
+          "number": "600-02",
+          "title": "Response, Placement, And Company Functions"
+        },
+        {
+          "number": "600-04",
+          "title": "Protective Clothing Requirement And Scba Use"
+        }
+      ]
+    },
+    {
+      "category": "closecall",
+      "state": "MA",
+      "sort": "2026-10-12",
+      "month": 10,
+      "department": "Somerville Fire Department (MA)",
+      "date": "October 12, 2026",
+      "outcome": "At a five-alarm commercial building fire, two firefighters received electrical shocks while attempting to shut off electricity, were treated and released; part of the first floor collapsed into the basement and the roof collapsed, and crews withdrew to an exterior attack. No civilians were injured.",
+      "url": "https://www.fireengineering.com/firefighting/two-ma-firefighters-injured-battling-commercial-fire/",
+      "sops": [
+        {
+          "number": "600-03",
+          "title": "Safety"
+        },
+        {
+          "number": "600-37",
+          "title": "Tactical Withdrawals / Emergency Retreats"
+        },
+        {
+          "number": "600-04",
+          "title": "Protective Clothing Requirement And Scba Use"
+        }
+      ]
+    },
     {
       "category": "lodd",
       "state": "TX",
@@ -5144,17 +5300,19 @@ const DASHBOARD_DATA = {
   "daily": [
     {
       "tag": "RESCUE",
-      "department": "DC Fire and EMS",
-      "date": "early morning October 11, 2026",
-      "outcome": "At a house fire on the 600 block of Geranium Street NW, one civilian died at the scene and six civilians were hospitalized. Three were in critical condition, including two adults and one child; three had non-life-threatening injuries, including one adult and two children. The cause is under investigation.",
-      "url": "https://fox5dc.com/news/1-dead-northwest-dc-fire-injured-6-more-including-children"
+      "department": "Port Huron Fire Department (MI)",
+      "date": "October 13, 2026",
+      "outcome": "Firefighters rescued an occupant from an adjoining apartment during a fire that destroyed a mixed-use business and apartment building; no injuries were reported and the cause is under investigation.",
+      "url": "https://www.thetimesherald.com/story/news/local/2026/10/13/port-huron-michigan-fire-destroys-apartment-and-business/92231224007/",
+      "sops": ["SOP 600-02 — Response, Placement, And Company Functions", "SOP 600-04 — Protective Clothing Requirement And Scba Use"]
     },
     {
-      "tag": "LODD",
-      "department": "Council Bluffs Fire Department (IA)",
-      "date": "October 8, 2026",
-      "outcome": "A firefighter/paramedic with 19 years of service suffered an on-duty medical emergency (stroke) while working a structure fire on October 5 and died in the hospital on October 8.",
-      "url": "https://www.firehouse.com/lodds/news/55410725/council-bluffs-ia-firefighter-dies-after-responding-to-fire"
+      "tag": "CLOSE CALL",
+      "department": "Somerville Fire Department (MA)",
+      "date": "October 12, 2026",
+      "outcome": "At a five-alarm commercial building fire, two firefighters received electrical shocks while attempting to shut off electricity, were treated and released; part of the first floor collapsed into the basement and the roof collapsed, and crews withdrew to an exterior attack. No civilians were injured.",
+      "url": "https://www.fireengineering.com/firefighting/two-ma-firefighters-injured-battling-commercial-fire/",
+      "sops": ["SOP 600-03 — Safety", "SOP 600-37 — Tactical Withdrawals / Emergency Retreats", "SOP 600-04 — Protective Clothing Requirement And Scba Use"]
     }
   ]
 };
