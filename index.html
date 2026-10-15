@@ -185,90 +185,87 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "October 14, 2026",
+  "updatedThrough": "October 15, 2026",
   "practical": {
-    "title": "Kill the Power Safely: Utility Control and Electrical Hazards",
+    "title": "Open It Up Right: Coordinated Ventilation and Reading Fire Behavior",
     "duration": "20-45 minutes",
-    "objective": "Locate, isolate, and verify building utilities at a working commercial fire without contacting energized equipment, using lock-out/tag-out and a utility-company request.",
+    "objective": "Coordinate ventilation with fire attack and search at a Florida garden apartment fire, timing openings with water application, reading smoke and fire behavior, and checking floor integrity before entry.",
     "nfpa": "NFPA 1001 · NFPA 1500",
     "equipment": [
-      "De-energized training disconnect prop",
-      "Lock-out/tag-out kit (locks, hasps, and tags)",
+      "Positive-pressure fan",
       "Thermal imaging camera",
-      "Four-gas monitor",
-      "Portable radio for PAR",
-      "Full PPE and SCBA for all participants",
+      "Charged hose line",
+      "Ground ladder",
+      "Radio",
       "Stopwatch"
     ],
     "steps": [
-      "Size-up: identify the service drop, meter, and electrical rooms on arrival and assign a utilities officer.",
-      "Locate the main disconnect from a safe position and simulate a utility-company request, including the ETA.",
-      "Demonstrate lock-out/tag-out on a de-energized training prop and verbalize verification of zero energy.",
-      "Sweep with a TIC and gas monitor around the electrical area without touching energized parts.",
-      "Practice the withdrawal call and PAR if arcing, shock, or collapse indicators appear.",
-      "Reset and rotate so every member locates a disconnect, applies a lock/tag, and gives the utilities report."
+      "Size up smoke, fire behavior, and wind, and name the ventilation plan and who controls each opening.",
+      "Position the fan and create the exhaust opening only on command, coordinated with the attack crew ready to apply water.",
+      "Sound the floor at the entry and sweep with the TIC before committing crews inside.",
+      "Ventilate one room at a time, report conditions change after each opening, and keep crew integrity and an exit path.",
+      "Practice the stop call: shut down ventilation and withdraw if fire behavior worsens, the floor feels unsound, or accountability is lost.",
+      "Reset and rotate so every member sets the fan, makes an opening, and gives the conditions report."
     ],
-    "safety": "Never cut or pull a meter; treat all conductors as energized until the utility confirms isolation; full PPE/SCBA.",
-    "benchmark": "Crew locates and safely isolates the training prop and completes lock/tag and report in under 5 minutes with zero contact with energized parts.",
+    "safety": "Full PPE and SCBA. Never ventilate without command approval and an attack line ready. Sound floors before entry and stay off fire-weakened flooring.",
+    "benchmark": "Crew completes coordinated ventilation, entry check, and TIC sweep in under 6 minutes with correct radio reports and no uncommanded openings.",
     "relatedSops": [
+      "SOP 600-21 — Ventilation Practices",
       "SOP 600-03 — Safety",
-      "SOP 600-04 — Protective Clothing Requirement And Scba Use",
-      "SOP 600-01 — Incident Command System"
+      "SOP 600-04 — Protective Clothing Requirement And Scba Use"
     ]
   },
   "tabletop": {
-    "title": "Six EVs on Fire: Dealership Lot, Hour 1 to Hour 17",
+    "title": "Second Alarm and Still Working: Rehab, PAR, and Crew Rotation at an Extended Apartment Fire",
     "duration": "15-20 minutes",
-    "scenario": "Multiple electric vehicles burning in a Florida auto dealership lot at night, with exposures to the showroom, thermal runaway re-ignition, and a long-duration water and rehab operation.",
-    "nfpa": "NFPA 1500 · NFPA 1584",
+    "scenario": "A fire in a vacant Florida garden apartment building spreads through floor and roof voids on a warm morning. The response grows to three alarms, crews rotate for hours, and command must protect firefighters from heat, injury, and accountability gaps.",
+    "nfpa": "NFPA 1500 · NFPA 1584 · NFPA 1561",
     "injects": [
       {
         "time": "0 min",
-        "text": "Dispatch and first size-up: six electric vehicles are involved in the dealership lot. What are your first actions, apparatus placement, and initial notifications?"
+        "text": "First alarm working fire, heavy flames, boarded units. Set command, accountability, and an early rehab area."
       },
       {
         "time": "5 min",
-        "text": "One vehicle re-ignites and exposures to the showroom heat up. How do you re-prioritize water and protect the exposure?"
+        "text": "A firefighter falls through a weakened floor and is removed by ladder with no serious injury; another reports minor hand burns. What notifications, medical care, and PAR follow?"
       },
       {
         "time": "10 min",
-        "text": "Water supply and runoff concerns grow and crews need rehab rotation. How do you sustain supply, manage runoff, and rotate companies?"
+        "text": "Second and third alarms arrive, heat builds, and crews have been working without rotation. How are rehab, hydration, vitals, and work-rest cycles enforced?"
       },
       {
         "time": "15 min",
-        "text": "Command decides the defensive posture, notifications, and the extended operations plan. What does the next several hours look like?"
+        "text": "Floor and roof sections collapse and command goes defensive. How is a full PAR completed and the strategy change communicated to every crew?"
       }
     ],
     "questions": [
       {
         "group": "Firefighters",
         "items": [
-          "How do you cool a burning EV battery pack, and from what distance do you apply water?",
-          "What signs tell you a vehicle is about to re-ignite, and what does the re-ignition watch look like hour after hour?",
-          "Where do you position to stay clear of venting gases, projectiles, and runoff while staying effective?"
+          "What are the signs that you or your partner need rehab now, not at the next rotation?",
+          "What do you report and do immediately after a fall-through or a burn injury, even a minor one?",
+          "How do you answer a PAR quickly and accurately when crews have been split and rotated?"
         ]
       },
       {
         "group": "Officers",
         "items": [
-          "How do you secure and sustain water supply for an operation that may run many hours?",
-          "How do you build rehab rotation into the plan from the first hour, not after crews are spent?",
-          "When is an EV blanket appropriate, as a thermal-runaway last resort only, and why never on a fully involved vehicle?",
-          "Which agency notifications go out, and when: hazmat, utility, law enforcement, dealership ownership, and county resources?"
+          "How do you staff and enforce rehab so no crew self-selects out of it during an extended operation?",
+          "After an injury, what notifications and documentation are started, and what equipment is preserved?",
+          "How do you verify every crew heard and acted on a defensive transition and a PAR?"
         ]
       }
     ],
     "teachingPoints": [
-      "Expect re-ignition: thermal runaway can restart a pack long after knockdown.",
-      "Protect exposures first: the showroom and uninvolved vehicles outrank cars already lost.",
-      "Plan for hours, not minutes: sustained water supply, relief crews, and lighting for night operations.",
-      "Rotate crews through rehab on a schedule, not when they drop.",
-      "Document a fire watch plan with re-check intervals before clearing the scene."
+      "Rehab is an assignment, not a break.",
+      "Minor burns and near-miss falls get medical evaluation, notification, and documentation the same as serious injuries.",
+      "Complete a PAR after every alarm upgrade, injury, and strategy change.",
+      "Plan crew rotation for extended operations before heat illness appears."
     ],
     "relatedSops": [
-      "SOP 600-20 — Hazardous Materials Initial Response",
       "SOP 600-12 — Rehabilitation",
-      "SOP 600-02 — Response, Placement, And Company Functions"
+      "SOP 600-11 — Accountability System",
+      "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death"
     ]
   }
 };
@@ -276,6 +273,25 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+  {
+    date:"October 15, 2026",sort:"2026-10-15-2",type:"Practical",topic:"Coordinated ventilation and fire behavior",title:"Open It Up Right: Coordinated Ventilation and Reading Fire Behavior",
+    summary:"Coordinate ventilation with fire attack and search at a Florida garden apartment fire, timing openings with water application, reading smoke and fire behavior, and checking floor integrity before entry.",nfpa:["NFPA 1001","NFPA 1500"],
+    sops:["SOP 600-21 — Ventilation Practices", "SOP 600-03 — Safety", "SOP 600-04 — Protective Clothing Requirement And Scba Use"],complete:true,
+    duration:"20-45 minutes",
+    equipment:["Positive-pressure fan", "Thermal imaging camera", "Charged hose line", "Ground ladder", "Radio", "Stopwatch"],
+    steps:["Size up smoke, fire behavior, and wind, and name the ventilation plan and who controls each opening.", "Position the fan and create the exhaust opening only on command, coordinated with the attack crew ready to apply water.", "Sound the floor at the entry and sweep with the TIC before committing crews inside.", "Ventilate one room at a time, report conditions change after each opening, and keep crew integrity and an exit path.", "Practice the stop call: shut down ventilation and withdraw if fire behavior worsens, the floor feels unsound, or accountability is lost.", "Reset and rotate so every member sets the fan, makes an opening, and gives the conditions report."],
+    safety:"Full PPE and SCBA. Never ventilate without command approval and an attack line ready. Sound floors before entry and stay off fire-weakened flooring.",
+    benchmark:"Crew completes coordinated ventilation, entry check, and TIC sweep in under 6 minutes with correct radio reports and no uncommanded openings."
+  },
+  {
+    date:"October 15, 2026",sort:"2026-10-15-1",type:"Tabletop",topic:"Rehab, PAR, and crew rotation",title:"Second Alarm and Still Working: Rehab, PAR, and Crew Rotation at an Extended Apartment Fire",
+    summary:"A fire in a vacant Florida garden apartment building spreads through floor and roof voids on a warm morning. The response grows to three alarms, crews rotate for hours, and command must protect firefighters from heat, injury, and accountability gaps.",nfpa:["NFPA 1500","NFPA 1584","NFPA 1561"],
+    sops:["SOP 600-12 — Rehabilitation", "SOP 600-11 — Accountability System", "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death"],complete:true,
+    duration:"15-20 minutes",
+    injects:[{"time": "0 min", "text": "First alarm working fire, heavy flames, boarded units. Set command, accountability, and an early rehab area."}, {"time": "5 min", "text": "A firefighter falls through a weakened floor and is removed by ladder with no serious injury; another reports minor hand burns. What notifications, medical care, and PAR follow?"}, {"time": "10 min", "text": "Second and third alarms arrive, heat builds, and crews have been working without rotation. How are rehab, hydration, vitals, and work-rest cycles enforced?"}, {"time": "15 min", "text": "Floor and roof sections collapse and command goes defensive. How is a full PAR completed and the strategy change communicated to every crew?"}],
+    questions:[{"group": "Firefighters", "items": ["What are the signs that you or your partner need rehab now, not at the next rotation?", "What do you report and do immediately after a fall-through or a burn injury, even a minor one?", "How do you answer a PAR quickly and accurately when crews have been split and rotated?"]}, {"group": "Officers", "items": ["How do you staff and enforce rehab so no crew self-selects out of it during an extended operation?", "After an injury, what notifications and documentation are started, and what equipment is preserved?", "How do you verify every crew heard and acted on a defensive transition and a PAR?"]}],
+    teachingPoints:["Rehab is an assignment, not a break.", "Minor burns and near-miss falls get medical evaluation, notification, and documentation the same as serious injuries.", "Complete a PAR after every alarm upgrade, injury, and strategy change.", "Plan crew rotation for extended operations before heat illness appears."]
+  },
   {
     date:"October 14, 2026",sort:"2026-10-14-2",type:"Practical",topic:"Utility control and electrical hazards",title:"Kill the Power Safely: Utility Control and Electrical Hazards",
     summary:"Locate, isolate, and verify building utilities at a working commercial fire without contacting energized equipment, using lock-out/tag-out and a utility-company request.",nfpa:["NFPA 1001","NFPA 1500"],
@@ -462,7 +478,7 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "October 14, 2026",
+  "updatedThrough": "October 15, 2026",
   "totals": {
     "lodd": {
       "total": 69,
@@ -481,11 +497,35 @@ const DASHBOARD_DATA = {
       "sub": "73 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 13,
-      "sub": "5 FLORIDA · 8 NATIONAL"
+      "total": 14,
+      "sub": "5 FLORIDA · 9 NATIONAL"
     }
   },
   "incidents": [
+    {
+      "category": "closecall",
+      "state": "TX",
+      "sort": "2026-10-14",
+      "month": 10,
+      "department": "San Antonio Fire Department (TX)",
+      "date": "October 14, 2026",
+      "outcome": "At a three-alarm fire in a vacant apartment complex, a firefighter fell through a fire-weakened floor while sounding it during a search and was rescued quickly with a ladder, with no serious injury and no hospitalization; a second firefighter suffered minor burns to the hands and was taken to a hospital for treatment and evaluation as a precaution. Crews later moved to an exterior attack as floor and roof sections collapsed.",
+      "url": "https://dailydispatch.com/fire-news/national/videos-firefighter-falls-through-floor-as-3-alarm-fire-tears-through-vacant-apartment-building-in-texas/",
+      "sops": [
+        {
+          "number": "600-03",
+          "title": "Safety"
+        },
+        {
+          "number": "600-11",
+          "title": "Accountability System"
+        },
+        {
+          "number": "600-34",
+          "title": "Serious Illness/Injury/Line Of Duty Death"
+        }
+      ]
+    },
     {
       "category": "rescue",
       "state": "MI",
@@ -5283,36 +5323,35 @@ const DASHBOARD_DATA = {
     }
   ],
   "drill": {
-    "title": "Blocking-Position Defense: Highway Apparatus Placement",
-    "intro": "Position the apparatus as a protective shield at a roadway incident so the rig — not the crew — absorbs an impact.",
+    "title": "Open It Up Right: Coordinated Ventilation and Reading Fire Behavior",
+    "intro": "Coordinate ventilation with fire attack and search at a Florida garden apartment fire, timing openings with water application, reading smoke and fire behavior, and checking floor integrity before entry.",
     "steps": [
-      "Angle the blocking apparatus upstream of the incident zone, wheels turned away from traffic, brake set, wheels chocked.",
-      "Build a full advance-warning taper with cones and arrow lighting before any crew exits the cab.",
-      "Exit and work only on the non-traffic side; keep the crew in the work zone behind the apparatus.",
-      "Post an upstream lookout and rehearse the shelter drill for a taper breach; tear the taper down in reverse order."
+      "Size up smoke, fire behavior, and wind, and name the ventilation plan and who controls each opening.",
+      "Position the fan and create the exhaust opening only on command, coordinated with the attack crew ready to apply water.",
+      "Sound the floor at the entry and sweep with the TIC before committing crews inside.",
+      "Ventilate one room at a time, report conditions change after each opening, and keep crew integrity and an exit path.",
+      "Practice the stop call: shut down ventilation and withdraw if fire behavior worsens, the floor feels unsound, or accountability is lost.",
+      "Reset and rotate so every member sets the fan, makes an opening, and gives the conditions report."
     ],
-    "nfpa": "NFPA 1451 vehicle operations training · NFPA 1500 occupational safety",
+    "nfpa": "NFPA 1001 · NFPA 1500",
     "relatedSops": [
-      "SOP 600-35 — Apparatus Placement / Temporary",
-      "SOP 600-03 — Safety"
+      "SOP 600-21 — Ventilation Practices",
+      "SOP 600-03 — Safety",
+      "SOP 600-04 — Protective Clothing Requirement And Scba Use"
     ]
   },
   "daily": [
     {
-      "tag": "RESCUE",
-      "department": "Port Huron Fire Department (MI)",
-      "date": "October 13, 2026",
-      "outcome": "Firefighters rescued an occupant from an adjoining apartment during a fire that destroyed a mixed-use business and apartment building; no injuries were reported and the cause is under investigation.",
-      "url": "https://www.thetimesherald.com/story/news/local/2026/10/13/port-huron-michigan-fire-destroys-apartment-and-business/92231224007/",
-      "sops": ["SOP 600-02 — Response, Placement, And Company Functions", "SOP 600-04 — Protective Clothing Requirement And Scba Use"]
-    },
-    {
       "tag": "CLOSE CALL",
-      "department": "Somerville Fire Department (MA)",
-      "date": "October 12, 2026",
-      "outcome": "At a five-alarm commercial building fire, two firefighters received electrical shocks while attempting to shut off electricity, were treated and released; part of the first floor collapsed into the basement and the roof collapsed, and crews withdrew to an exterior attack. No civilians were injured.",
-      "url": "https://www.fireengineering.com/firefighting/two-ma-firefighters-injured-battling-commercial-fire/",
-      "sops": ["SOP 600-03 — Safety", "SOP 600-37 — Tactical Withdrawals / Emergency Retreats", "SOP 600-04 — Protective Clothing Requirement And Scba Use"]
+      "department": "San Antonio Fire Department (TX)",
+      "date": "October 14, 2026",
+      "outcome": "At a three-alarm fire in a vacant apartment complex, a firefighter fell through a fire-weakened floor while sounding it during a search and was rescued quickly with a ladder, with no serious injury and no hospitalization; a second firefighter suffered minor burns to the hands and was taken to a hospital for treatment and evaluation as a precaution. Crews later moved to an exterior attack as floor and roof sections collapsed.",
+      "url": "https://dailydispatch.com/fire-news/national/videos-firefighter-falls-through-floor-as-3-alarm-fire-tears-through-vacant-apartment-building-in-texas/",
+      "sops": [
+        "SOP 600-03 — Safety",
+        "SOP 600-11 — Accountability System",
+        "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death"
+      ]
     }
   ]
 };
