@@ -146,7 +146,7 @@
       <article class="chart-card"><h3>LODDs by month</h3><p>Death count through <span class="updated-through-label"></span>; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
       <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
       <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents in this briefing dataset through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>80 firefighter maydays total—74 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–September 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>81 firefighter maydays total—75 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–September 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
       <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals from the linked 2026 records through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
@@ -186,85 +186,84 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "October 26, 2026",
+  "updatedThrough": "October 27, 2026",
   "practical": {
-    "title": "Search First, Count Every Time: VES and Oriented Search in a Slab-on-Grade Home",
+    "title": "Low Air, Call It Early: SCBA Air Management, the 3 Ws Mayday, and Window-to-Ladder Self-Rescue",
     "duration": "20-45 minutes",
-    "objective": "Crews perform vent-enter-search and oriented search in a simulated single-story slab-on-grade Florida home, locate and remove 2 simulated occupants, and report each find by room so no occupant is counted twice. Tied to Sevier County, Tennessee, October 25, 2026, where crews searched a heavily involved home, located 2 occupants, removed them and began care, and to Boston, Massachusetts, October 24, 2026, where firefighters rescued 6 people from an apartment fire.",
-    "nfpa": "NFPA 1001 · NFPA 1500 · NFPA 1700",
+    "objective": "Crews manage SCBA air during a simulated second-floor search in a Florida garden apartment, call a mayday using the 3 Ws (Who you are, What happened / what you need, Where you are) at the low-air warning, and self-rescue through a window onto a ground ladder while the rapid intervention crew responds. Tied to Brockton, Massachusetts, October 26, 2026, where a firefighter searching the second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder.",
+    "nfpa": "NFPA 1001 · NFPA 1500 · NFPA 1407",
     "equipment": [
+      "SCBA with PASS",
       "Thermal imaging camera",
-      "Hand tools",
-      "Ground ladder",
-      "Webbing or search rope",
-      "Simulated occupants (manikins)",
+      "Ground ladder placed at a window",
       "Radios",
-      "Accountability tags"
+      "Accountability tags",
+      "Simulated occupant (manikin)"
     ],
     "steps": [
-      "Officer gives a size-up and a search plan by room. Crew A is assigned VES of the primary bedroom through the window, Crew B is assigned an oriented interior search from the front door, each with a TIC and a radio.",
-      "VES crew raises the ladder, enters the window, isolates the room by closing the door, searches the bed and floor, and reports the room status before exiting or handing a found occupant out the window.",
-      "Oriented crew enters on a wall, maintains orientation by voice and contact, searches in a stated direction, and calls each room clear, not clear, or victim found, with the location repeated back by the officer.",
-      "On a victim find, the crew reports who found the occupant, what room, and what exit will be used, removes the manikin by that exit, and hands off to a simulated EMS point where the occupant is tagged and counted once.",
-      "Crews swap roles and repeat in a second layout with one occupant under a bed and one in a closet, with low visibility simulated. The officer reconciles the count: found, removed, handed off, and still reported inside must match before the search is called complete.",
-      "Final evolution: a bystander report adds a third occupant who was already removed. Crews must clear or confirm that report by room-by-room secondary search results, not by assumption."
+      "Officer gives a size-up and a search assignment by room. Each firefighter states a starting air pressure and an exit pressure out loud, and the officer records both on the accountability board before entry.",
+      "Search crew advances on a wall with a TIC, calls each room status by radio, and checks air at every room change. The officer calls a PAR and an air check at the halfway point of the evolution.",
+      "On the low-air warning (instructor-triggered if needed), the affected firefighter stops, activates PASS control as trained, and transmits the mayday using the 3 Ws: who they are, what happened (low air during search), and where they are (floor, room, window side).",
+      "Command acknowledges the mayday, clears the channel, deploys the rapid intervention crew to the ladder side, and keeps suppression and search assignments separate from the rescue assignment.",
+      "The firefighter moves to the window, signals the ladder crew, exits onto the ground ladder, and descends with a spotter below. The rapid intervention crew meets the firefighter at the base, confirms air status and injuries, and reports the mayday cleared with a PAR.",
+      "Crews swap roles and repeat with the reported trapped occupant found during the search, so the crew must pass the occupant information to command without delaying the low-air mayday or the self-rescue."
     ],
-    "safety": "No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked. Ladder work with a spotter at the base. Stop for any real emergency, real injury, or low-air alarm that is not part of the drill.",
-    "benchmark": "First room searched within 3 minutes of entry, every room reported by name, both occupants removed and handed off within 12 minutes, and the final occupant count reconciles with zero double counts.",
+    "safety": "No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked for real. Ladder work with a spotter at the base and a belay where policy requires. Stop for any real emergency, real injury, or a low-air alarm that is not part of the drill. Any firefighter who feels unwell exits immediately and is evaluated.",
+    "benchmark": "Mayday transmitted within 15 seconds of the low-air warning with a complete 3 Ws report, self-rescue onto the ladder and down within 3 minutes of the mayday, and a full PAR with matching air readings within 1 minute of the mayday being cleared.",
     "relatedSops": [
-      "SOP 600-02 — Response, Placement, And Company Functions",
-      "SOP 600-04 — Protective Clothing Requirement And Scba Use",
-      "SOP 600-06 — Size-Up And On-Scene Radio Reports"
+      "SOP 600-28 — Mayday Operations",
+      "SOP 600-13 — Rapid Intervention Crew (Ric)",
+      "SOP 600-04 — Protective Clothing Requirement And Scba Use"
     ]
   },
   "tabletop": {
-    "title": "Third Alarm, Six Rescues, One on the Roof: Communications and Accountability When the Count Keeps Changing",
+    "title": "Fully Involved on Arrival: Explosion in the First Minutes at a Detached Garage",
     "duration": "15-20 minutes",
-    "scenario": "A three-alarm apartment fire in a Florida garden apartment complex at about 03:45. Heavy fire is showing, firefighters rescue 6 occupants, 2 are transported, 1 occupant is sheltering on the roof because of heavy smoke, and about 20 other occupants and pets self-evacuate. Tied to Boston, Massachusetts, October 24, 2026, Brainerd Road, where Boston firefighters rescued 6 people at a third-alarm fire, 2 were hospitalized, 1 person sheltered on the roof, and about 20 people self-evacuated.",
-    "nfpa": "NFPA 1561 · NFPA 1500",
+    "scenario": "A detached garage behind a single-story slab-on-grade Florida home is fully involved on arrival at about 21:10. Dispatch notes flag repeat responses to this address for illegal burning over the past six months. Shortly after crews and police arrive, an explosion damages nearby homes and injures a firefighter, two officers, and a civilian, all non-life-threatening. Tied to Springfield, Illinois, October 25, 2026.",
+    "nfpa": "NFPA 1500 · NFPA 1561",
     "injects": [
       {
         "time": "0-5 min",
-        "text": "First crews report heavy fire and occupants needing rescue on multiple sides. What must the first rescue reports contain (unit, floor, side, number of occupants, exit used), and who starts the occupant count?"
+        "text": "First crew reports a fully involved detached garage with exposures on two sides. What apparatus placement, first line choice, and standoff distance do you set before anyone is committed close to the structure, and how do you use the repeat-address flag from dispatch?"
       },
       {
         "time": "5-10 min",
-        "text": "Six occupants have been rescued, 2 need transport, and a report comes in of an occupant on the roof. How do you assign the roof occupant without pulling a crew already counted in a PAR, and how is that occupant kept separate from the rescued and self-evacuated counts?"
+        "text": "An explosion occurs. A firefighter, two officers, and a civilian are hurt and nearby homes are damaged. What are your first five transmissions, who treats and transports, and how do you account for every responder who was in the blast area?"
       },
       {
         "time": "10-15 min",
-        "text": "A neighbor reports another occupant still inside a unit that a crew already reported clear. What do you require before re-entering that unit, and how do you record the re-check so the count does not change twice for the same person?"
+        "text": "The occupant is detained and investigators are requested. What do you preserve, what do you keep crews out of, and how do you handle overhaul when the scene is now a criminal investigation?"
       },
       {
         "time": "15-20 min",
-        "text": "Fire is under control. What must be reconciled before release: rescued count, transported count, self-evacuated count, roof occupant outcome, primary and secondary search by unit, and a PAR for every crew that made a rescue?"
+        "text": "Fire is out. What must be documented before release: injury reports, exposure and blast-area roster, damaged structures checked, notifications, and the post-incident analysis referral?"
       }
     ],
     "questions": [
       {
         "group": "Firefighters",
         "items": [
-          "What is the minimum content of a rescue report so command can count you and the occupant correctly the first time?",
-          "How do you call a roof-shelter occupant so it is not heard as another interior victim?"
+          "What garage contents change your standoff distance on sight (fuel containers, propane, vehicles, fireworks)?",
+          "After an explosion, what do you report about yourself and your crew before you go back to work?"
         ]
       },
       {
         "group": "Officers",
         "items": [
-          "How do you keep rescued, transported, self-evacuated, and still-reported occupants in four separate counts that never merge?",
-          "When does a changing occupant count require a PAR, and who do you PAR first?"
+          "How does a repeat-response history at an address change your size-up and your first assignments?",
+          "When do you move from fire attack to a defensive, investigative posture, and who makes that call with law enforcement on scene?"
         ]
       }
     ],
     "teachingPoints": [
-      "A rescue that is not reported by unit, floor, and exit cannot be counted, and an uncounted rescue creates a false still-inside report.",
-      "Roof shelter is a location to protect and remove on purpose, not a self-evacuation.",
-      "Four separate occupant counts, rescued, transported, self-evacuated, and still reported, are reconciled by unit before any all-clear.",
-      "A PAR follows any phase where crews split for simultaneous rescues."
+      "A fully involved detached garage is a defensive fire until exposures and contents say otherwise; nobody needs to be close to a structure that is already lost.",
+      "Repeat-address information is a size-up input, not background noise, and it belongs in the first radio report.",
+      "An explosion triggers accountability first: a PAR, a blast-area roster, and medical evaluation for everyone in it, including police and civilians.",
+      "Once arson is suspected, overhaul stops being routine; preserve the scene and let investigators direct disturbance."
     ],
     "relatedSops": [
-      "SOP 600-11 — Accountability System",
-      "SOP 600-07 — Communications / Dispatch Operations",
+      "SOP 600-06 — Size-Up And On-Scene Radio Reports",
+      "SOP 600-03 — Safety",
       "SOP 600-01 — Incident Command System"
     ]
   }
@@ -273,6 +272,25 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+  {
+    date:"October 27, 2026",updatedThrough:"October 27, 2026",sort:"2026-10-27-2",type:"Practical",topic:"SCBA air management, the 3 Ws mayday, and window-to-ladder self-rescue",title:"Low Air, Call It Early: SCBA Air Management, the 3 Ws Mayday, and Window-to-Ladder Self-Rescue",
+    summary:"Crews manage SCBA air during a simulated second-floor search in a Florida garden apartment, call a mayday using the 3 Ws (Who you are, What happened / what you need, Where you are) at the low-air warning, and self-rescue through a window onto a ground ladder while the rapid intervention crew responds. Tied to Brockton, Massachusetts, October 26, 2026, where a firefighter searching the second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder.",nfpa:["NFPA 1001", "NFPA 1500", "NFPA 1407"],
+    sops:["SOP 600-28 — Mayday Operations", "SOP 600-13 — Rapid Intervention Crew (Ric)", "SOP 600-04 — Protective Clothing Requirement And Scba Use"],complete:true,
+    duration:"20-45 minutes",
+    equipment:["SCBA with PASS", "Thermal imaging camera", "Ground ladder placed at a window", "Radios", "Accountability tags", "Simulated occupant (manikin)"],
+    steps:["Officer gives a size-up and a search assignment by room. Each firefighter states a starting air pressure and an exit pressure out loud, and the officer records both on the accountability board before entry.", "Search crew advances on a wall with a TIC, calls each room status by radio, and checks air at every room change. The officer calls a PAR and an air check at the halfway point of the evolution.", "On the low-air warning (instructor-triggered if needed), the affected firefighter stops, activates PASS control as trained, and transmits the mayday using the 3 Ws: who they are, what happened (low air during search), and where they are (floor, room, window side).", "Command acknowledges the mayday, clears the channel, deploys the rapid intervention crew to the ladder side, and keeps suppression and search assignments separate from the rescue assignment.", "The firefighter moves to the window, signals the ladder crew, exits onto the ground ladder, and descends with a spotter below. The rapid intervention crew meets the firefighter at the base, confirms air status and injuries, and reports the mayday cleared with a PAR.", "Crews swap roles and repeat with the reported trapped occupant found during the search, so the crew must pass the occupant information to command without delaying the low-air mayday or the self-rescue."],
+    safety:"No live fire or smoke. Full PPE and SCBA worn as in training policy, air tracked for real. Ladder work with a spotter at the base and a belay where policy requires. Stop for any real emergency, real injury, or a low-air alarm that is not part of the drill. Any firefighter who feels unwell exits immediately and is evaluated.",
+    benchmark:"Mayday transmitted within 15 seconds of the low-air warning with a complete 3 Ws report, self-rescue onto the ladder and down within 3 minutes of the mayday, and a full PAR with matching air readings within 1 minute of the mayday being cleared."
+  },
+  {
+    date:"October 27, 2026",updatedThrough:"October 27, 2026",sort:"2026-10-27-1",type:"Tabletop",topic:"Defensive garage fire, explosion response, and scene preservation",title:"Fully Involved on Arrival: Explosion in the First Minutes at a Detached Garage",
+    summary:"A detached garage behind a single-story slab-on-grade Florida home is fully involved on arrival at about 21:10. Dispatch notes flag repeat responses to this address for illegal burning over the past six months. Shortly after crews and police arrive, an explosion damages nearby homes and injures a firefighter, two officers, and a civilian, all non-life-threatening. Tied to Springfield, Illinois, October 25, 2026.",nfpa:["NFPA 1500", "NFPA 1561"],
+    sops:["SOP 600-06 — Size-Up And On-Scene Radio Reports", "SOP 600-03 — Safety", "SOP 600-01 — Incident Command System"],complete:true,
+    duration:"15-20 minutes",
+    injects:[{"time": "0-5 min", "text": "First crew reports a fully involved detached garage with exposures on two sides. What apparatus placement, first line choice, and standoff distance do you set before anyone is committed close to the structure, and how do you use the repeat-address flag from dispatch?"}, {"time": "5-10 min", "text": "An explosion occurs. A firefighter, two officers, and a civilian are hurt and nearby homes are damaged. What are your first five transmissions, who treats and transports, and how do you account for every responder who was in the blast area?"}, {"time": "10-15 min", "text": "The occupant is detained and investigators are requested. What do you preserve, what do you keep crews out of, and how do you handle overhaul when the scene is now a criminal investigation?"}, {"time": "15-20 min", "text": "Fire is out. What must be documented before release: injury reports, exposure and blast-area roster, damaged structures checked, notifications, and the post-incident analysis referral?"}],
+    questions:[{"group": "Firefighters", "items": ["What garage contents change your standoff distance on sight (fuel containers, propane, vehicles, fireworks)?", "After an explosion, what do you report about yourself and your crew before you go back to work?"]}, {"group": "Officers", "items": ["How does a repeat-response history at an address change your size-up and your first assignments?", "When do you move from fire attack to a defensive, investigative posture, and who makes that call with law enforcement on scene?"]}],
+    teachingPoints:["A fully involved detached garage is a defensive fire until exposures and contents say otherwise; nobody needs to be close to a structure that is already lost.", "Repeat-address information is a size-up input, not background noise, and it belongs in the first radio report.", "An explosion triggers accountability first: a PAR, a blast-area roster, and medical evaluation for everyone in it, including police and civilians.", "Once arson is suspected, overhaul stops being routine; preserve the scene and let investigators direct disturbance."]
+  },
   {
     date:"October 26, 2026",updatedThrough:"October 26, 2026",sort:"2026-10-26-2",type:"Practical",topic:"VES and oriented search techniques",title:"Search First, Count Every Time: VES and Oriented Search in a Slab-on-Grade Home",
     summary:"Crews perform vent-enter-search and oriented search in a simulated single-story slab-on-grade Florida home, locate and remove 2 simulated occupants, and report each find by room so no occupant is counted twice. Tied to Sevier County, Tennessee, October 25, 2026, where crews searched a heavily involved home, located 2 occupants, removed them and began care, and to Boston, Massachusetts, October 24, 2026, where firefighters rescued 6 people from an apartment fire.",nfpa:["NFPA 1001", "NFPA 1500", "NFPA 1700"],
@@ -692,31 +710,129 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "October 26, 2026",
+  "updatedThrough": "October 27, 2026",
   "totals": {
     "lodd": {
       "total": 73,
       "sub": "31 INCIDENT-RELATED · 34 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 67 NATIONAL",
-      "note": "LODD count check: the USFA page header shows 76 for 2026, but 5 recent listings dated October 20, 2026 are test records with test department names, leaving 71 real USFA listings, most recently October 14, 2026 in Louisiana. This dashboard records 73: it includes the Baltimore occupational cancer LODD announced October 21, 2026, the St. Lucie County, Florida LODD of October 24, 2026, and the Rutland-Dundee, Illinois training LODD of October 25, 2026, none yet listed by USFA, while one earlier USFA listing is still unidentified and not on this dashboard; it is flagged for a backfill audit."
+      "note": "LODD count check: the USFA page header now shows 72 for 2026, and its recent list still tops at October 14, 2026 in Louisiana. This dashboard records 73: it includes the Baltimore occupational cancer LODD announced October 21, 2026, the St. Lucie County, Florida LODD of October 24, 2026, and the Rutland-Dundee, Illinois training LODD of October 25, 2026, none yet listed by USFA, while earlier USFA listings are still unidentified and not on this dashboard; the difference is flagged for a backfill audit."
     },
     "crash": {
-      "total": 34,
-      "sub": "8 FATAL · 14 SERIOUS · 12 MINOR"
+      "total": 35,
+      "sub": "8 FATAL · 14 SERIOUS · 13 MINOR"
     },
     "rescue": {
-      "total": 33,
-      "sub": "6 FLORIDA · 27 NATIONAL"
+      "total": 35,
+      "sub": "6 FLORIDA · 29 NATIONAL"
     },
     "mayday": {
-      "total": 80,
-      "sub": "74 VERIFIED · 6 UNVERIFIED"
+      "total": 81,
+      "sub": "75 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 16,
-      "sub": "6 FLORIDA · 10 NATIONAL"
+      "total": 17,
+      "sub": "6 FLORIDA · 11 NATIONAL"
     }
   },
   "incidents": [
+    {
+      "category": "rescue",
+      "state": "MA",
+      "sort": "2026-10-26",
+      "month": 10,
+      "department": "Brockton Fire Department (MA)",
+      "date": "October 26, 2026",
+      "outcome": "Firefighters rescued 5 people by ground ladders from the second floor of a five-alarm multifamily home fire at 303 Spring Street at about 8:21 AM; 11 people in total were taken to hospitals, including 4 firefighters, and the chief said none of the injuries were serious; 2 other occupants jumped from windows before crews arrived.",
+      "url": "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
+      "sops": [
+        {
+          "number": "600-02",
+          "title": "Response, Placement, And Company Functions"
+        },
+        {
+          "number": "600-04",
+          "title": "Protective Clothing Requirement And Scba Use"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "MA",
+      "sort": "2026-10-26",
+      "month": 10,
+      "department": "Brockton Fire Department (MA)",
+      "date": "October 26, 2026",
+      "outcome": "A firefighter searching the smoke-filled second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder; a rapid intervention team was sent in.",
+      "url": "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "rescue",
+      "state": "IL",
+      "sort": "2026-10-26",
+      "month": 10,
+      "department": "Rockford Fire Department (IL)",
+      "date": "October 26, 2026",
+      "outcome": "During a search of a house fire in the 700 block of Blenheim Drive at about 1:30 AM, crews found a resident in the basement and took the resident outside; the resident was transported to a hospital; 4 engines and 26 firefighters responded and damage was estimated at $10,000.",
+      "url": "https://www.rockfordnewsfirst.com/2026/10/26/1-hospitalized-after-overnight-house-fire-rockford/",
+      "sops": [
+        {
+          "number": "600-02",
+          "title": "Response, Placement, And Company Functions"
+        },
+        {
+          "number": "600-04",
+          "title": "Protective Clothing Requirement And Scba Use"
+        }
+      ]
+    },
+    {
+      "category": "crash",
+      "severity": "minor",
+      "state": "CT",
+      "sort": "2026-10-25",
+      "month": 10,
+      "department": "Litchfield Fire Department (CT)",
+      "date": "October 25, 2026",
+      "outcome": "A fire truck and another vehicle collided on Route 202 (Torrington Road) at about 2:33 PM on Sunday; state police said the crash resulted in non-life-threatening injuries and released no other information.",
+      "url": "https://www.fireapparatusmagazine.com/fire-apparatus/fire-truck-collides-with-vehicle-on-ct-route-202/",
+      "sops": [
+        {
+          "number": "600-03",
+          "title": "Safety"
+        }
+      ]
+    },
+    {
+      "category": "closecall",
+      "state": "IL",
+      "sort": "2026-10-25",
+      "month": 10,
+      "department": "Springfield Fire Department (IL)",
+      "date": "October 25, 2026",
+      "outcome": "A detached garage was fully involved on arrival at about 9:10 PM in the 2100 block of South 12th Street; an explosion shortly after arrival injured 1 firefighter, 2 police officers, and 1 civilian, all non-life-threatening, and damaged several nearby structures; a man was arrested on arson charges and the address had repeated illegal-burning responses over the prior six months.",
+      "url": "https://www.nprillinois.org/springfield-il/2026-10-26/spring-fire-that-led-to-an-explosion-results-in-aggravated-arson-arrest",
+      "sops": [
+        {
+          "number": "600-03",
+          "title": "Safety"
+        },
+        {
+          "number": "600-06",
+          "title": "Size-Up And On-Scene Radio Reports"
+        }
+      ]
+    },
     {
       "category": "lodd",
       "state": "IL",
@@ -6046,23 +6162,35 @@ const DASHBOARD_DATA = {
       "SOP 600-04 — Protective Clothing Requirement And Scba Use"
     ]
   },
-  "daily": [
+  "daily":   [
     {
-      "tag": "LODD",
-      "department": "Rutland-Dundee Fire Protection District (IL)",
-      "date": "October 25, 2026",
-      "outcome": "A firefighter died Sunday after suffering cardiac arrest during a scheduled training exercise on October 21; crewmates began care and the member was hospitalized; the district announced the death on October 25; not yet listed by USFA.",
-      "url": "https://www.firehouse.com/lodds/news/55414249/rutland-dundee-il-firefighter-dies-after-collapsing-during-training-last-week",
+      "tag": "RESCUE",
+      "department": "Brockton Fire Department (MA)",
+      "date": "October 26, 2026",
+      "outcome": "Firefighters rescued 5 people by ground ladders from the second floor of a five-alarm multifamily home fire at 303 Spring Street at about 8:21 AM; 11 people in total were taken to hospitals, including 4 firefighters, and the chief said none of the injuries were serious; 2 other occupants jumped from windows before crews arrived.",
+      "url": "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
       "sops": [
-        "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death"
+        "SOP 600-02 — Response, Placement, And Company Functions",
+        "SOP 600-04 — Protective Clothing Requirement And Scba Use"
+      ]
+    },
+    {
+      "tag": "MAYDAY",
+      "department": "Brockton Fire Department (MA)",
+      "date": "October 26, 2026",
+      "outcome": "A firefighter searching the smoke-filled second floor for a reported trapped child ran low on air, called a mayday, broke a window, and escaped down a ground ladder; a rapid intervention team was sent in.",
+      "url": "https://www.enterprisenews.com/story/news/fire/2026/10/26/brockton-fire-spring-street-house-rescue/92442175007/",
+      "sops": [
+        "SOP 600-28 — Mayday Operations",
+        "SOP 600-13 — Rapid Intervention Crew (Ric)"
       ]
     },
     {
       "tag": "RESCUE",
-      "department": "Boston Fire Department (MA)",
-      "date": "October 24, 2026",
-      "outcome": "Firefighters rescued 6 people from a third-alarm apartment fire on Brainerd Road at about 3:45 AM; 2 were hospitalized, 1 person sheltered on the roof due to heavy smoke, and about 20 people and pets self-evacuated.",
-      "url": "https://dailydispatch.com/fire-news/massachusetts/2-hospitalized-after-firefighters-rescue-6-people-from-burning-building-in-boston/",
+      "department": "Rockford Fire Department (IL)",
+      "date": "October 26, 2026",
+      "outcome": "During a search of a house fire in the 700 block of Blenheim Drive at about 1:30 AM, crews found a resident in the basement and took the resident outside; the resident was transported to a hospital; 4 engines and 26 firefighters responded and damage was estimated at $10,000.",
+      "url": "https://www.rockfordnewsfirst.com/2026/10/26/1-hospitalized-after-overnight-house-fire-rockford/",
       "sops": [
         "SOP 600-02 — Response, Placement, And Company Functions",
         "SOP 600-04 — Protective Clothing Requirement And Scba Use"
@@ -6070,12 +6198,23 @@ const DASHBOARD_DATA = {
     },
     {
       "tag": "CRASH",
-      "department": "Wheeling Fire Department (WV)",
-      "date": "October 23, 2026",
-      "outcome": "A tow truck towing a utility vehicle struck Engine 2 on I-470 near Exit 2 at about 3:50 PM; at least 1 firefighter was injured and in stable condition at a hospital; state police are investigating.",
-      "url": "https://www.firefighterclosecalls.com/engine-involved-in-crash-with-tow-truck-west-virginia/",
+      "department": "Litchfield Fire Department (CT)",
+      "date": "October 25, 2026",
+      "outcome": "A fire truck and another vehicle collided on Route 202 (Torrington Road) at about 2:33 PM on Sunday; state police said the crash resulted in non-life-threatening injuries and released no other information.",
+      "url": "https://www.fireapparatusmagazine.com/fire-apparatus/fire-truck-collides-with-vehicle-on-ct-route-202/",
       "sops": [
         "SOP 600-03 — Safety"
+      ]
+    },
+    {
+      "tag": "CLOSE CALL",
+      "department": "Springfield Fire Department (IL)",
+      "date": "October 25, 2026",
+      "outcome": "A detached garage was fully involved on arrival at about 9:10 PM in the 2100 block of South 12th Street; an explosion shortly after arrival injured 1 firefighter, 2 police officers, and 1 civilian, all non-life-threatening, and damaged several nearby structures; a man was arrested on arson charges and the address had repeated illegal-burning responses over the prior six months.",
+      "url": "https://www.nprillinois.org/springfield-il/2026-10-26/spring-fire-that-led-to-an-explosion-results-in-aggravated-arson-arrest",
+      "sops": [
+        "SOP 600-03 — Safety",
+        "SOP 600-06 — Size-Up And On-Scene Radio Reports"
       ]
     }
   ]
