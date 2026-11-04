@@ -146,7 +146,7 @@
       <article class="chart-card"><h3>LODDs by month</h3><p>Death count through <span class="updated-through-label"></span>; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
       <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
       <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents in this briefing dataset through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>81 firefighter maydays total—75 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–September 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>82 firefighter maydays total—76 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–September 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
       <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals from the linked 2026 records through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
@@ -186,86 +186,106 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "November 3, 2026",
+  "updatedThrough": "November 4, 2026",
   "practical": {
-    "title": "Search With a Clock Running: Primary Search, TIC Sweep, and Victim Handoff in a Single-Story Florida Home",
+    "title": "Down Below Grade: Mayday Call, RIT Entry, and Firefighter Removal Up the Stairs",
     "duration": "20-45 minutes",
-    "objective": "Run a primary search of a single-story slab-on-grade Florida home against a running clock: oriented search with a TIC sweep, a victim located and removed through the nearest exit, and a clean handoff to EMS with the search status reported room by room; tied to Everett, Washington, November 2, 2026, where firefighters rescued a mother and child from a balcony at an apartment fire, 15 residents were displaced, and no injuries were reported.",
-    "nfpa": "NFPA 1001 · NFPA 1500",
+    "objective": "Crews practice a complete mayday using the 3 Ws (Who you are, What happened / what you need, Where you are), a RIT entry into a below-grade or split-level training area, locating a downed firefighter by PASS and voice, packaging, and removal up the stairs; tied to North Royalton, Ohio, November 2, 2026, where a mayday for a firefighter down in a basement at a Broadview Heights house fire left one firefighter dead and a second seriously injured; Florida framing uses a stairwell, split-level, or sunken-area prop because most Florida homes have no basements.",
+    "nfpa": "NFPA 1407 · NFPA 1500 · NFPA 1561",
     "equipment": [
-      "Engine and handline",
       "Full PPE and SCBA",
-      "TIC",
-      "Mannequin (adult size)",
+      "PASS devices",
+      "RIT pack with spare air",
       "Radios",
+      "Handline for RIT protection",
+      "Thermal imaging camera",
       "Accountability board",
-      "Stopwatch"
+      "Downed firefighter mannequin"
     ],
     "steps": [
-      "Officer brief: single-story slab-on-grade Florida home, one occupant reported inside, search starts off the attack line with the officer holding orientation at the door; state the clock out loud, entry report is due within 1 minute.",
-      "Entry and orientation: crew enters on air, officer calls the entry report with location, conditions, and search assignment, and the crew stays oriented to the door and the line the whole way in.",
-      "TIC sweep: searcher sweeps each room with the TIC before committing, checks beds, closets, and behind doors, and calls what the camera shows and what it cannot see.",
-      "Victim removal: on the find, call the victim located and removal started, move the mannequin out the nearest exit, and keep the second searcher sweeping while the victim moves.",
-      "Search status by room: officer reports primary search status room by room to command, all clear or still searching, with the victim location and condition on the same transmission.",
-      "Reset and rotate: reset the home and the mannequin, rotate every member through officer, TIC, and removal positions, and run the clock again."
+      "Officer briefs the North Royalton fire: mutual aid house fire, heavy fire beneath interior crews, mayday below grade, second firefighter also injured, second squad requested; the mayday, RIT entry, and removal are one continuous job and command starts the second squad and accountability check at the mayday.",
+      "Mayday evolution: the downed firefighter transmits the mayday three times using the 3 Ws, activates PASS, and reports air status; command repeats the mayday back word for word and starts a PAR.",
+      "RIT entry evolution: RIT enters behind a charged line, the officer reports entry point, direction, and search plan, and the team follows PASS sound and voice contact without passing fire.",
+      "Locate and package: on contact the RIT notes the location, checks air, connects the RIT pack if needed, and packages the firefighter for a stair removal.",
+      "Removal: the team removes the firefighter up the stairs to the safe area, calls progress at the stairs and at the top, and hands off to EMS with location found, air status, and time from mayday to removal.",
+      "Reset and rotate every member through mayday, RIT, and command positions, closing by restating the mayday, entry report, and removal call word for word."
     ],
-    "safety": "Full PPE and SCBA on air for all interior work; no live fire, simulated smoke only; mannequin only for removal; watch air on every entry and exit as a crew; stop the evolution for any lost orientation or missed accountability check.",
-    "benchmark": "Entry report within 1 minute, victim located and removal called within 8 minutes, victim at the door and handed off within 12 minutes, and an accurate primary search status by room on the first call.",
+    "safety": "Full PPE and SCBA for all interior work, no live fire, simulated low visibility only, a charged line protects the RIT where the prop allows, stop for any real low air, lost orientation, or separation, watch heat stress and start rehab on exit.",
+    "benchmark": "Mayday complete with all 3 Ws on the first transmission, command repeats it back and starts a PAR within 1 minute, RIT entry report within 2 minutes, downed firefighter located within 6 minutes, removal to the safe area complete within 12 minutes of the mayday.",
     "relatedSops": [
-      {"number": "600-02", "title": "Response, Placement, And Company Functions"},
-      {"number": "600-04", "title": "Protective Clothing Requirement And Scba Use"},
-      {"number": "600-06", "title": "Size-Up And On-Scene Radio Reports"}
+      {
+        "number": "600-28",
+        "title": "Mayday Operations"
+      },
+      {
+        "number": "600-13",
+        "title": "Rapid Intervention Crew (Ric)"
+      },
+      {
+        "number": "600-11",
+        "title": "Accountability System"
+      }
     ]
   },
   "tabletop": {
-    "title": "Fully Engulfed on Arrival: Defensive Decisions, Occupant Accounting, and Water Supply at a Mobile Home Fire",
+    "title": "Two of Ours Down: Command, Accountability, and Notifications After a Fatal Mayday",
     "duration": "15-20 minutes",
-    "scenario": "First engine arrives at a double-wide mobile home in a Florida mobile home community, fully engulfed on arrival with fire through the roof; neighbors report the residents may still be inside, exposures sit close on both sides, and the nearest hydrant is down the street; tied to Crystal River, Florida, November 1, 2026, where Citrus County Fire Rescue worked a fully involved mobile home fire.",
+    "scenario": "Crews at a mutual aid single-story house fire at night report heavy fire beneath them; a mayday follows for a firefighter down in a below-grade area, then a second firefighter is reported down, CPR is reported, and a second squad is requested; one firefighter later dies and a second is in serious but stable condition; tied to North Royalton, Ohio, November 2, 2026.",
     "nfpa": "NFPA 1561 · NFPA 1500",
     "injects": [
       {
         "time": "0-5 min",
-        "text": "Arrival report and first move: fully engulfed double-wide, what goes in the first radio report, where does the first line go, and who owns the occupant question before anyone commits to an entry?"
+        "text": "Mayday transmitted, firefighter down below grade, heavy fire beneath crews; what is ordered in the first minute, who owns the PAR, and when is the second squad and added RIT requested?"
       },
       {
         "time": "5-10 min",
-        "text": "One neighbor insists the residents' car is gone while a second neighbor says someone stayed home sick; how does command account for the occupants without sending a crew into a fully involved structure?"
+        "text": "A second firefighter is down and CPR is reported; how are fire attack, RIT, and medical care split without losing accountability, and what goes on the radio versus what stays off it?"
       },
       {
         "time": "10-15 min",
-        "text": "Fire is extending to the exposure on the B side and the first engine is draining its tank; who lays the supply line, what does the second engine do on arrival, and what changes if the hydrant is dead?"
+        "text": "Both firefighters are out and transported, one critical; who makes hospital and family notifications, who secures gear and the scene, and what is said publicly before any name is released?"
       },
       {
         "time": "15-20 min",
-        "text": "Fire is knocked down and overhaul is about to start; when does the search begin, who documents the occupant accounting, and what does the company officer owe the displaced neighbors and the investigation before clearing?"
+        "text": "Word arrives one firefighter has died; walk the LODD notification sequence, peer support activation, station coverage, and the first post incident analysis steps."
       }
     ],
     "questions": [
       {
         "group": "Firefighters",
         "items": [
-          "What can a 360 and a TIC read tell you about survivability in a fully engulfed mobile home, and what do you report?",
-          "Exposure protection versus fire attack: where does your line go first and why?"
+          "What belongs in the mayday transmission, and what does the outside crew do in the first 60 seconds after a mayday that helps the RIT instead of crowding the entry point?",
+          "After a removal, what do you check on your partner and yourself before taking another assignment?"
         ]
       },
       {
         "group": "Officers",
         "items": [
-          "How do you make and announce the defensive call so no crew freelances an entry?",
-          "Water supply math: how long does tank water last at your flow rate, and when must the supply line be laid?"
+          "How is the PAR kept accurate when crews split between attack, RIT, and medical care?",
+          "Who owns the family notification, and what must never be released or posted before that notification is complete?"
         ]
       }
     ],
     "teachingPoints": [
-      "Fully engulfed on arrival means the first decisions are defensive: protect exposures, secure the water supply, and keep crews out of a structure with no survivable space.",
-      "Occupant accounting runs on information, not entry: neighbors, vehicles, and other signs build the count while the fire is knocked down.",
-      "Mobile homes go fast and fail fast; expect early collapse and keep apparatus and crews out of the collapse zone.",
-      "Tank water is a bridge, not a plan: lay the supply line early and say the water plan on the radio."
+      "A mayday starts three jobs at once (RIT, accountability, resources).",
+      "Radio carries operations while notifications and names stay off the radio and off social media until family notification is complete.",
+      "A second injured firefighter is a second patient, family, and notification track.",
+      "Gear, SCBA, and the scene are evidence after a fatal mayday, secure them early.",
+      "Peer support and coverage are same-night command decisions."
     ],
     "relatedSops": [
-      {"number": "600-03", "title": "Safety"},
-      {"number": "600-02", "title": "Response, Placement, And Company Functions"},
-      {"number": "600-06", "title": "Size-Up And On-Scene Radio Reports"}
+      {
+        "number": "600-34",
+        "title": "Serious Illness/Injury/Line Of Duty Death"
+      },
+      {
+        "number": "600-28",
+        "title": "Mayday Operations"
+      },
+      {
+        "number": "600-40",
+        "title": "Post-Incident Analysis (Pia)"
+      }
     ]
   }
 };
@@ -273,6 +293,108 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+{
+    "date": "November 4, 2026",
+    "updatedThrough": "November 4, 2026",
+    "sort": "2026-11-04-2",
+    "type": "Practical",
+    "topic": "Mayday, RIT entry, and below-grade firefighter removal",
+    "title": "Down Below Grade: Mayday Call, RIT Entry, and Firefighter Removal Up the Stairs",
+    "summary": "Crews practice a complete mayday using the 3 Ws (Who you are, What happened / what you need, Where you are), a RIT entry into a below-grade or split-level training area, locating a downed firefighter by PASS and voice, packaging, and removal up the stairs; tied to North Royalton, Ohio, November 2, 2026, where a mayday for a firefighter down in a basement at a Broadview Heights house fire left one firefighter dead and a second seriously injured; Florida framing uses a stairwell, split-level, or sunken-area prop because most Florida homes have no basements.",
+    "nfpa": [
+        "NFPA 1407",
+        "NFPA 1500",
+        "NFPA 1561"
+    ],
+    "sops": [
+        "SOP 600-28 — Mayday Operations",
+        "SOP 600-13 — Rapid Intervention Crew (Ric)",
+        "SOP 600-11 — Accountability System"
+    ],
+    "complete": true,
+    "duration": "20-45 minutes",
+    "equipment": [
+        "Full PPE and SCBA",
+        "PASS devices",
+        "RIT pack with spare air",
+        "Radios",
+        "Handline for RIT protection",
+        "Thermal imaging camera",
+        "Accountability board",
+        "Downed firefighter mannequin"
+    ],
+    "steps": [
+        "Officer briefs the North Royalton fire: mutual aid house fire, heavy fire beneath interior crews, mayday below grade, second firefighter also injured, second squad requested; the mayday, RIT entry, and removal are one continuous job and command starts the second squad and accountability check at the mayday.",
+        "Mayday evolution: the downed firefighter transmits the mayday three times using the 3 Ws, activates PASS, and reports air status; command repeats the mayday back word for word and starts a PAR.",
+        "RIT entry evolution: RIT enters behind a charged line, the officer reports entry point, direction, and search plan, and the team follows PASS sound and voice contact without passing fire.",
+        "Locate and package: on contact the RIT notes the location, checks air, connects the RIT pack if needed, and packages the firefighter for a stair removal.",
+        "Removal: the team removes the firefighter up the stairs to the safe area, calls progress at the stairs and at the top, and hands off to EMS with location found, air status, and time from mayday to removal.",
+        "Reset and rotate every member through mayday, RIT, and command positions, closing by restating the mayday, entry report, and removal call word for word."
+    ],
+    "safety": "Full PPE and SCBA for all interior work, no live fire, simulated low visibility only, a charged line protects the RIT where the prop allows, stop for any real low air, lost orientation, or separation, watch heat stress and start rehab on exit.",
+    "benchmark": "Mayday complete with all 3 Ws on the first transmission, command repeats it back and starts a PAR within 1 minute, RIT entry report within 2 minutes, downed firefighter located within 6 minutes, removal to the safe area complete within 12 minutes of the mayday."
+},
+{
+    "date": "November 4, 2026",
+    "updatedThrough": "November 4, 2026",
+    "sort": "2026-11-04-1",
+    "type": "Tabletop",
+    "topic": "Fatal mayday command, accountability, and LODD notifications",
+    "title": "Two of Ours Down: Command, Accountability, and Notifications After a Fatal Mayday",
+    "summary": "Crews at a mutual aid single-story house fire at night report heavy fire beneath them; a mayday follows for a firefighter down in a below-grade area, then a second firefighter is reported down, CPR is reported, and a second squad is requested; one firefighter later dies and a second is in serious but stable condition; tied to North Royalton, Ohio, November 2, 2026.",
+    "nfpa": [
+        "NFPA 1561",
+        "NFPA 1500"
+    ],
+    "sops": [
+        "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death",
+        "SOP 600-28 — Mayday Operations",
+        "SOP 600-40 — Post-Incident Analysis (Pia)"
+    ],
+    "complete": true,
+    "duration": "15-20 minutes",
+    "injects": [
+        {
+            "time": "0-5 min",
+            "text": "Mayday transmitted, firefighter down below grade, heavy fire beneath crews; what is ordered in the first minute, who owns the PAR, and when is the second squad and added RIT requested?"
+        },
+        {
+            "time": "5-10 min",
+            "text": "A second firefighter is down and CPR is reported; how are fire attack, RIT, and medical care split without losing accountability, and what goes on the radio versus what stays off it?"
+        },
+        {
+            "time": "10-15 min",
+            "text": "Both firefighters are out and transported, one critical; who makes hospital and family notifications, who secures gear and the scene, and what is said publicly before any name is released?"
+        },
+        {
+            "time": "15-20 min",
+            "text": "Word arrives one firefighter has died; walk the LODD notification sequence, peer support activation, station coverage, and the first post incident analysis steps."
+        }
+    ],
+    "questions": [
+        {
+            "group": "Firefighters",
+            "items": [
+                "What belongs in the mayday transmission, and what does the outside crew do in the first 60 seconds after a mayday that helps the RIT instead of crowding the entry point?",
+                "After a removal, what do you check on your partner and yourself before taking another assignment?"
+            ]
+        },
+        {
+            "group": "Officers",
+            "items": [
+                "How is the PAR kept accurate when crews split between attack, RIT, and medical care?",
+                "Who owns the family notification, and what must never be released or posted before that notification is complete?"
+            ]
+        }
+    ],
+    "teachingPoints": [
+        "A mayday starts three jobs at once (RIT, accountability, resources).",
+        "Radio carries operations while notifications and names stay off the radio and off social media until family notification is complete.",
+        "A second injured firefighter is a second patient, family, and notification track.",
+        "Gear, SCBA, and the scene are evidence after a fatal mayday, secure them early.",
+        "Peer support and coverage are same-night command decisions."
+    ]
+},
 {
     "date": "November 3, 2026",
     "updatedThrough": "November 3, 2026",
@@ -1237,31 +1359,135 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "November 3, 2026",
+  "updatedThrough": "November 4, 2026",
   "totals": {
     "lodd": {
-      "total": 74,
-      "sub": "31 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 68 NATIONAL",
-      "note": "LODD count check: USFA lists 72 for 2026 while this dashboard counts 74 because it includes three department-recognized LODDs not yet USFA-listed (Baltimore Oct 21, St. Lucie County Oct 24, Kansas City Oct 26), offset by one earlier USFA listing not on this dashboard; backfill audit still open."
+      "total": 76,
+      "sub": "33 INCIDENT-RELATED · 35 MEDICAL · 8 CAUSE PENDING · 6 FLORIDA · 70 NATIONAL",
+      "note": "LODD count check: USFA lists 73 for 2026 while this dashboard counts 76 because it includes five department and news recognized LODDs not yet USFA-listed (Baltimore Oct 21, St. Lucie County Oct 24, Kansas City Oct 26, North Royalton Nov 2, Raft River Nov 2), offset by earlier USFA listings not on this dashboard; backfill audit still open."
     },
     "crash": {
-      "total": 43,
-      "sub": "9 FATAL · 19 SERIOUS · 15 MINOR"
+      "total": 44,
+      "sub": "10 FATAL · 19 SERIOUS · 15 MINOR"
     },
     "rescue": {
       "total": 43,
       "sub": "7 FLORIDA · 36 NATIONAL"
     },
     "mayday": {
-      "total": 81,
-      "sub": "75 VERIFIED · 6 UNVERIFIED"
+      "total": 82,
+      "sub": "76 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 17,
-      "sub": "6 FLORIDA · 11 NATIONAL"
+      "total": 18,
+      "sub": "6 FLORIDA · 12 NATIONAL"
     }
   },
   "incidents": [
+{
+      "category": "lodd",
+      "state": "OH",
+      "sort": "2026-11-02",
+      "month": 11,
+      "department": "North Royalton Fire Department (OH)",
+      "date": "November 2, 2026",
+      "outcome": "A firefighter died from injuries sustained at a mutual aid house fire in Broadview Heights; dispatch traffic captured a mayday with a firefighter down in the basement and a second squad requested; a second firefighter was seriously injured and in serious but stable condition; the death was announced November 3 and is not yet USFA-listed.",
+      "url": "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
+      "cause": "incident",
+      "sops": [
+            {
+                  "number": "600-34",
+                  "title": "Serious Illness/Injury/Line Of Duty Death"
+            },
+            {
+                  "number": "600-28",
+                  "title": "Mayday Operations"
+            }
+      ]
+},
+{
+      "category": "lodd",
+      "state": "ID",
+      "sort": "2026-11-02",
+      "month": 11,
+      "department": "Raft River Fire District (ID)",
+      "date": "November 2, 2026",
+      "outcome": "A fire truck carrying two firefighters went off East Yale Road in Cassia County at about 9:00 PM and crashed; both firefighters were airlifted to a hospital in Pocatello, where one firefighter died from injuries and the other remained hospitalized; cause not yet clear; Idaho State Police are investigating; not yet USFA-listed.",
+      "url": "https://zestapp.ai/share/4984633928452-news?pd=0RYG01Nl&lang=en_US&s=i0&_f=app_share&send_time=1793762946&gen_by=ios",
+      "cause": "incident",
+      "sops": [
+            {
+                  "number": "600-03",
+                  "title": "Safety"
+            },
+            {
+                  "number": "600-34",
+                  "title": "Serious Illness/Injury/Line Of Duty Death"
+            }
+      ]
+},
+{
+      "category": "crash",
+      "severity": "fatal",
+      "state": "ID",
+      "sort": "2026-11-02",
+      "month": 11,
+      "department": "Raft River Fire District (ID)",
+      "date": "November 2, 2026",
+      "outcome": "A fire truck carrying two firefighters went off East Yale Road in Cassia County at about 9:00 PM and crashed; both firefighters were airlifted to a hospital in Pocatello, where one firefighter died from injuries and the other remained hospitalized; cause not yet clear; Idaho State Police are investigating; not yet USFA-listed.",
+      "url": "https://zestapp.ai/share/4984633928452-news?pd=0RYG01Nl&lang=en_US&s=i0&_f=app_share&send_time=1793762946&gen_by=ios",
+      "sops": [
+            {
+                  "number": "600-03",
+                  "title": "Safety"
+            },
+            {
+                  "number": "600-34",
+                  "title": "Serious Illness/Injury/Line Of Duty Death"
+            }
+      ]
+},
+{
+      "category": "mayday",
+      "state": "OH",
+      "sort": "2026-11-02",
+      "month": 11,
+      "department": "North Royalton Fire Department (OH)",
+      "date": "November 2, 2026",
+      "outcome": "Mayday at the Broadview Heights house fire with a firefighter down in the basement and a second squad requested for a firefighter; one firefighter died and a second firefighter was seriously injured; the death is counted once, under LODD.",
+      "url": "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
+      "verification": "verified",
+      "sops": [
+            {
+                  "number": "600-28",
+                  "title": "Mayday Operations"
+            },
+            {
+                  "number": "600-13",
+                  "title": "Rapid Intervention Crew (Ric)"
+            }
+      ]
+},
+{
+      "category": "closecall",
+      "state": "IN",
+      "sort": "2026-11-02",
+      "month": 11,
+      "department": "Avon Fire Department (IN)",
+      "date": "November 2, 2026",
+      "outcome": "A firefighter was engulfed in flames when a vehicle exploded at about noon on U.S. Route 36; the blast knocked the firefighter off their feet; the firefighter rolled away and was helped up; the department confirmed full PPE was worn and there were no injuries to firefighters, bystanders, or the driver, who was not in the vehicle.",
+      "url": "https://www.indystar.com/story/news/local/2026/11/03/video-shows-avon-indiana-firefighter-engulfed-in-flames-after-vehicle-explodes/92581715007/",
+      "sops": [
+            {
+                  "number": "600-04",
+                  "title": "Protective Clothing Requirement And Scba Use"
+            },
+            {
+                  "number": "600-03",
+                  "title": "Safety"
+            }
+      ]
+},
 {
       "category": "rescue",
       "state": "WA",
@@ -7004,42 +7230,65 @@ const DASHBOARD_DATA = {
     }
   ],
   "drill": {
-    "title": "Search With a Clock Running: Primary Search, TIC Sweep, and Victim Handoff in a Single-Story Florida Home",
-    "intro": "Run a primary search of a single-story slab-on-grade Florida home against a running clock: oriented search with a TIC sweep, a victim located and removed through the nearest exit, and a clean handoff to EMS with the search status reported room by room; tied to Everett, Washington, November 2, 2026, where firefighters rescued a mother and child from a balcony at an apartment fire, 15 residents were displaced, and no injuries were reported.",
+    "title": "Down Below Grade: Mayday Call, RIT Entry, and Firefighter Removal Up the Stairs",
+    "intro": "Crews practice a complete mayday using the 3 Ws (Who you are, What happened / what you need, Where you are), a RIT entry into a below-grade or split-level training area, locating a downed firefighter by PASS and voice, packaging, and removal up the stairs; tied to North Royalton, Ohio, November 2, 2026, where a mayday for a firefighter down in a basement at a Broadview Heights house fire left one firefighter dead and a second seriously injured; Florida framing uses a stairwell, split-level, or sunken-area prop because most Florida homes have no basements.",
     "steps": [
-        "Officer brief: single-story slab-on-grade Florida home, one occupant reported inside, search starts off the attack line with the officer holding orientation at the door; state the clock out loud, entry report is due within 1 minute.",
-        "Entry and orientation: crew enters on air, officer calls the entry report with location, conditions, and search assignment, and the crew stays oriented to the door and the line the whole way in.",
-        "TIC sweep: searcher sweeps each room with the TIC before committing, checks beds, closets, and behind doors, and calls what the camera shows and what it cannot see.",
-        "Victim removal: on the find, call the victim located and removal started, move the mannequin out the nearest exit, and keep the second searcher sweeping while the victim moves.",
-        "Search status by room: officer reports primary search status room by room to command, all clear or still searching, with the victim location and condition on the same transmission.",
-        "Reset and rotate: reset the home and the mannequin, rotate every member through officer, TIC, and removal positions, and run the clock again."
+        "Officer briefs the North Royalton fire: mutual aid house fire, heavy fire beneath interior crews, mayday below grade, second firefighter also injured, second squad requested; the mayday, RIT entry, and removal are one continuous job and command starts the second squad and accountability check at the mayday.",
+        "Mayday evolution: the downed firefighter transmits the mayday three times using the 3 Ws, activates PASS, and reports air status; command repeats the mayday back word for word and starts a PAR.",
+        "RIT entry evolution: RIT enters behind a charged line, the officer reports entry point, direction, and search plan, and the team follows PASS sound and voice contact without passing fire.",
+        "Locate and package: on contact the RIT notes the location, checks air, connects the RIT pack if needed, and packages the firefighter for a stair removal.",
+        "Removal: the team removes the firefighter up the stairs to the safe area, calls progress at the stairs and at the top, and hands off to EMS with location found, air status, and time from mayday to removal.",
+        "Reset and rotate every member through mayday, RIT, and command positions, closing by restating the mayday, entry report, and removal call word for word."
     ],
-    "nfpa": "NFPA 1001 · NFPA 1500",
+    "nfpa": "NFPA 1407 · NFPA 1500 · NFPA 1561",
     "relatedSops": [
-        "SOP 600-02 — Response, Placement, And Company Functions",
-        "SOP 600-04 — Protective Clothing Requirement And Scba Use",
-        "SOP 600-06 — Size-Up And On-Scene Radio Reports"
+        "SOP 600-28 — Mayday Operations",
+        "SOP 600-13 — Rapid Intervention Crew (Ric)",
+        "SOP 600-11 — Accountability System"
     ]
 },
   "daily": [
-    {
-        "tag": "RESCUE",
-        "department": "South County Fire (WA)",
-        "date": "November 1, 2026",
-        "outcome": "Firefighters rescued a mother and a child from a balcony at an apartment fire near Everett; 15 residents were displaced; no injuries were reported.",
-        "url": "https://seattlecourant.com/stories/2026-11-02-fire-displaces-15-residents-near-everett-mother-child-rescued-f60580.html",
+{
+        "tag": "LODD",
+        "department": "North Royalton Fire Department (OH)",
+        "date": "November 2, 2026",
+        "outcome": "A firefighter died from injuries sustained at a mutual aid house fire in Broadview Heights; dispatch traffic captured a mayday with a firefighter down in the basement and a second squad requested; a second firefighter was seriously injured and in serious but stable condition; the death was announced November 3 and is not yet USFA-listed.",
+        "url": "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
         "sops": [
-            "SOP 600-02 — Response, Placement, And Company Functions",
-            "SOP 600-06 — Size-Up And On-Scene Radio Reports"
+            "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death",
+            "SOP 600-28 — Mayday Operations"
         ]
     },
-    {
-        "tag": "CRASH",
-        "department": "Sandy Ridge Fire Department (VA)",
-        "date": "October 31, 2026",
-        "outcome": "A fire department truck went off Ralph Stanley Highway in Dickenson County and overturned on Saturday afternoon; the truck was not responding to an emergency call; 4 people were taken to a hospital with non-life-threatening injuries; Virginia State Police are investigating.",
-        "url": "https://www.firefighterclosecalls.com/fire-apparatus-involved-in-single-vehicle-crash-four-injured-virginia/",
+{
+        "tag": "LODD / CRASH",
+        "department": "Raft River Fire District (ID)",
+        "date": "November 2, 2026",
+        "outcome": "A fire truck carrying two firefighters went off East Yale Road in Cassia County at about 9:00 PM and crashed; both firefighters were airlifted to a hospital in Pocatello, where one firefighter died from injuries and the other remained hospitalized; cause not yet clear; Idaho State Police are investigating; not yet USFA-listed.",
+        "url": "https://zestapp.ai/share/4984633928452-news?pd=0RYG01Nl&lang=en_US&s=i0&_f=app_share&send_time=1793762946&gen_by=ios",
         "sops": [
+            "SOP 600-03 — Safety",
+            "SOP 600-34 — Serious Illness/Injury/Line Of Duty Death"
+        ]
+    },
+{
+        "tag": "MAYDAY",
+        "department": "North Royalton Fire Department (OH)",
+        "date": "November 2, 2026",
+        "outcome": "Mayday at the Broadview Heights house fire with a firefighter down in the basement and a second squad requested for a firefighter; one firefighter died and a second firefighter was seriously injured; the death is counted once, under LODD.",
+        "url": "https://www.firerescue1.com/line-of-duty-death-lodd/ohio-firefighter-dies-battling-house-fire-second-seriously-injured",
+        "sops": [
+            "SOP 600-28 — Mayday Operations",
+            "SOP 600-13 — Rapid Intervention Crew (Ric)"
+        ]
+    },
+{
+        "tag": "CLOSECALL",
+        "department": "Avon Fire Department (IN)",
+        "date": "November 2, 2026",
+        "outcome": "A firefighter was engulfed in flames when a vehicle exploded at about noon on U.S. Route 36; the blast knocked the firefighter off their feet; the firefighter rolled away and was helped up; the department confirmed full PPE was worn and there were no injuries to firefighters, bystanders, or the driver, who was not in the vehicle.",
+        "url": "https://www.indystar.com/story/news/local/2026/11/03/video-shows-avon-indiana-firefighter-engulfed-in-flames-after-vehicle-explodes/92581715007/",
+        "sops": [
+            "SOP 600-04 — Protective Clothing Requirement And Scba Use",
             "SOP 600-03 — Safety"
         ]
     }
