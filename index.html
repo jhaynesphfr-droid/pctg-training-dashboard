@@ -146,7 +146,7 @@
       <article class="chart-card"><h3>LODDs by month</h3><p>Death count through <span class="updated-through-label"></span>; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
       <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
       <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents in this briefing dataset through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>82 firefighter maydays total—76 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–September 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>90 firefighter maydays total—84 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–October 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
       <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals from the linked 2026 records through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
@@ -1680,12 +1680,12 @@ const DASHBOARD_DATA = {
       "sub": "7 FLORIDA · 38 NATIONAL"
     },
     "mayday": {
-      "total": 82,
-      "sub": "76 VERIFIED · 6 UNVERIFIED"
+      "total": 90,
+      "sub": "84 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 19,
-      "sub": "6 FLORIDA · 13 NATIONAL"
+      "total": 18,
+      "sub": "6 FLORIDA · 12 NATIONAL"
     }
   },
   "incidents": [
@@ -2619,6 +2619,153 @@ const DASHBOARD_DATA = {
     },
     {
       "category": "mayday",
+      "state": "MO",
+      "sort": "2026-10-16",
+      "month": 10,
+      "department": "Potosi Fire Department (MO)",
+      "date": "October 16, 2026",
+      "outcome": "Mayday following a firefighter's foot injury during a mobile-home fire; the firefighter was assisted out and transported. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "MN",
+      "sort": "2026-10-11",
+      "month": 10,
+      "department": "Minneapolis Fire Department (MN)",
+      "date": "October 11, 2026",
+      "outcome": "Mayday during a commercial fire after shelving blocked two firefighters' exits; both self-extricated and were hospitalized. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "NC",
+      "sort": "2026-10-08",
+      "month": 10,
+      "department": "Durham Fire Department (NC)",
+      "date": "October 8, 2026",
+      "outcome": "Roof and floor collapse trapped multiple firefighters; one firefighter was killed and two were hospitalized. This incident is also counted under LODD. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "CA",
+      "sort": "2026-10-07",
+      "month": 10,
+      "department": "Los Angeles Fire Department (CA)",
+      "date": "October 7, 2026",
+      "outcome": "Flash fire during a basement investigation; four firefighters were injured and transported. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "MO",
+      "sort": "2026-10-04",
+      "month": 10,
+      "department": "O'Fallon Fire Department (MO)",
+      "date": "October 4, 2026",
+      "outcome": "A garage ceiling collapse struck a firefighter; the firefighter self-extricated and was hospitalized. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "CO",
+      "sort": "2026-10-02",
+      "month": 10,
+      "department": "Aurora Fire Department (CO)",
+      "date": "October 2, 2026",
+      "outcome": "Mayday after a floor collapse; a firefighter fell through the floor, was rescued, and was transported with minor injuries. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "NH",
+      "sort": "2026-10-02",
+      "month": 10,
+      "department": "Londonderry Fire Department (NH)",
+      "date": "October 2, 2026",
+      "outcome": "A firefighter encountered a flashover during a primary search, escaped, and sustained burns and a fractured leg. Validated in the Firefighter Mayday Survey October 2026 snapshot.",
+      "url": "https://firefightermaydaysurvey.com/",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
       "state": "TN",
       "sort": "2026-10-19",
       "month": 10,
@@ -2791,7 +2938,7 @@ const DASHBOARD_DATA = {
       ]
     },
     {
-      "category": "closecall",
+      "category": "mayday",
       "state": "TX",
       "sort": "2026-10-14",
       "month": 10,
