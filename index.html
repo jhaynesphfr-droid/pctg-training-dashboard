@@ -146,7 +146,7 @@
       <article class="chart-card"><h3>LODDs by month</h3><p>Death count through <span class="updated-through-label"></span>; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
       <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
       <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents in this briefing dataset through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>90 firefighter maydays total—84 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–October 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>91 firefighter maydays total—85 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–October 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
       <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals from the linked 2026 records through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
@@ -186,108 +186,105 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "November 12, 2026",
+  "updatedThrough": "November 13, 2026",
   "practical": {
-    "title": "First Hour at the Pile: Collapse Search, Shore, and Lift",
+    "title": "Sound It Before You Step: Floor Integrity in a Manufactured Home",
     "duration": "20-45 minutes",
-    "objective": "Crews arriving at a simulated partial collapse of a Florida three-story mixed-use building set a collapse zone, run a structured void and surface search, build a basic shore and crib stack, and lift a simulated load off a victim position without entering an unsupported void. Tied to FDNY (NY), November 11, 2026, where a three-story building in Brooklyn collapsed into an adjacent excavation, killing two people and injuring 17, with survivors pulled from the rubble over hours and secondary collapse risk throughout.",
-    "nfpa": "NFPA 1006 · NFPA 2500 · NFPA 1500",
+    "objective": "Crews arriving at a simulated single-wide manufactured home fire assess floor integrity before and during entry, sound the floor and stay near walls and joists as they advance, check for fire below with the TIC, and stabilize in place and call a 3 Ws mayday at once if a simulated floor failure occurs. Tied to Amarillo Fire Department (TX), November 10, 2026, where a firefighter fell through the floor of a single-wide mobile home, a mayday was called, and the firefighter was removed and taken to a hospital; and to Moline Fire Department (IL), November 10, 2026, where a firefighter fell through a collapsing floor, self-rescued, and was not injured.",
+    "nfpa": "NFPA 1001 · NFPA 1500 · NFPA 1407",
     "equipment": [
-      "Cribbing and shoring lumber or training shores",
-      "Lifting bags or jacks if carried",
-      "Search camera or TIC",
-      "Listening device if carried",
-      "Saws",
-      "Hand tools",
-      "Marking paint or chalk",
+      "Engine with full hose complement",
+      "One handline",
+      "TIC",
+      "Hand tools for sounding (axe or Halligan)",
+      "Marked training floor or prop floor section",
       "Radios",
       "Accountability board",
-      "Collapse zone tape or cones",
       "Rehab supplies"
     ],
     "steps": [
-      "Officer briefs the Brooklyn collapse: building fell into an open excavation, first crew on scene in about a minute, survivors out over hours, standing danger was secondary collapse; first hour is search and stabilization in that order, nobody enters an unsupported void.",
-      "Zone and size-up: first report naming construction, collapse pattern, excavation or void side, utilities to control; inner and outer collapse zones set; one member assigned as safety watching the pile and adjoining wall with no other job.",
-      "Surface and void search: hailing and surface search first, searched areas and victim locations marked on a sketch, accessible voids checked with TIC or search camera from outside the void, each void reported as victim found, no victim, or not accessible without shoring.",
-      "Shore and crib: crew builds a basic shore or crib stack at the victim position, every member names the load path out loud, officer checks base solid, load captured, stack plumb before any lift.",
-      "Lift and removal: lift only enough to free the victim position, crib as it lifts, slide simulated victim out along a protected path, stop on any shift, crack, or safety call, never hands under a suspended load.",
-      "Reset and rotate: victim in a different void, rotate officer, safety, search, and shoring roles, close with PAR, tool and lumber inventory, and the three stop triggers: pile movement, adjoining wall movement, any unaccounted member."
+      "Officer briefs both November 10 floor failures out loud: in Amarillo a firefighter went through the floor of a single-wide with heavy fire showing, a mayday was called, and he came out by removal and went to a hospital; in Moline a firefighter went through a collapsing floor the same day and self-rescued with no injury. The point: the floor is a decision, not a given, and manufactured home floors fail early under fire below.",
+      "Pre-entry evolution: officer gives a first report naming manufactured home construction, fire location, and whether fire is suspected below the floor, assigns the TIC operator to check the floor and skirting line for heat below, and states whether entry is on the floor, along the walls, or not at all.",
+      "Sounding evolution: crew advances the handline sounding every step with a tool, staying near walls and over joists where possible, distributing weight low and wide, reporting floor condition (solid, spongy, or failed) by area before committing past each area.",
+      "Simulated failure evolution: on the officer's signal, one member simulates a floor failure in place: stop, stay still, keep weight spread, transmit a 3 Ws mayday at once (Who you are, What happened and what you need, Where you are), activate PASS, and the crew stabilizes and removes the member along the sound path already proven, without rushing onto the failed section.",
+      "Second-alarm and accountability evolution: officer declares the mayday on the radio, requests the additional alarm and EMS, and completes a PAR with every member accounted for by name and position before any crew re-enters.",
+      "Reset and rotate: reset with fire suspected below a different room, rotate officer, TIC, nozzle, and mayday-member roles, and close by restating the three floor stop triggers: spongy or sagging floor underfoot, TIC heat below the floor ahead, and any member unable to state the proven path back out."
     ],
-    "safety": "No member enters an unsupported void in training or on the real pile without shoring and a safety call. Helmets, gloves, eye protection in the inner zone. Training load is a prop weight only, inspected before use. Stop for any real movement of the training prop.",
-    "benchmark": "Collapse zones set and first report with safety assigned within 3 minutes, surface search and void reports complete within 10 minutes, shore or crib built and checked within 12 minutes, simulated victim freed and out with cribbing following the load and zero hands under a suspended load, complete PAR within 2 minutes of the victim reaching the cold zone.",
+    "safety": "Full PPE and SCBA on air for interior evolutions. The training floor prop is inspected before use and no real drop is built into it; the failure is simulated in place only. No member advances past an area the sounding member has called failed. Stop the evolution for any real floor or prop defect found.",
+    "benchmark": "First report with construction, fire-below check, and entry path stated within 2 minutes, floor condition reported by area before the crew commits past each area, 3 Ws mayday transmitted within 15 seconds of the simulated failure, simulated member removed along the proven path within 3 minutes, and a complete PAR within 2 minutes of the removal.",
     "relatedSops": [
       {
-        "number": "600-23",
-        "title": "Technical Rescue Response"
+        "number": "600-06",
+        "title": "Size-Up And On-Scene Radio Reports"
       },
       {
         "number": "600-03",
         "title": "Safety"
       },
       {
-        "number": "600-01",
-        "title": "Incident Command System"
+        "number": "600-28",
+        "title": "Mayday Operations"
       }
     ]
   },
   "tabletop": {
-    "title": "Keep the Rubber Down: Rollover Prevention When the Other Driver Does Not Yield",
+    "title": "Out the Door Into the Smoke: Assessing an Infant and Adults Who Self-Evacuated",
     "duration": "15-20 minutes",
-    "scenario": "Your pumper is responding on a multi-lane Florida arterial in afternoon traffic. An armored truck pulls across your path at an intersection, your driver brakes and steers, and the apparatus starts to lean. Tied to San Carlos Park (FL), November 10, 2026, where a pumper and a Brink's truck collided and rolled over on US-41; one firefighter suffered moderate injuries and two firefighters and the Brink's worker suffered minor injuries.",
-    "nfpa": "NFPA 1451 · NFPA 1500",
+    "scenario": "Your crew arrives at a two-story multifamily Florida home with heavy smoke; two adults and an infant are fleeing through the smoke as you pull up, a cat is still inside, and the fire is threatening the exposure next door. Tied to Riverhead Fire Department (NY), November 12, 2026, where two adults and an infant were rushed to area hospitals for smoke inhalation evaluation after fleeing a multifamily home through heavy smoke; about 50 firefighters controlled the fire in about 45 minutes, a dog escaped uninjured, and a cat died inside.",
+    "nfpa": "NFPA 1500 · NFPA 1561",
     "injects": [
       {
         "time": "0-5 min",
-        "text": "Officer call-outs at every intersection, accepted speed through a green light with uncleared lanes, and who is belted before the wheels move."
+        "text": "The adults and infant are in the front yard coughing, the infant is quiet, and neighbors say someone else may still be inside. Who assesses the infant first, what smoke inhalation signs change your transport decision for each patient, and who owns the occupant count while the first line goes in?"
       },
       {
         "time": "5-10 min",
-        "text": "The truck pulls out, the driver brakes hard and steers; what rollover feels like from the officer seat, what the driver does with wheel and brake once the apparatus leans, and why a top-heavy pumper with a full tank punishes a sharp correction."
+        "text": "One adult says she feels fine and wants to go back in for the cat, and a second adult has already left toward a neighbor's car. What do you do about re-entry, who tracks the adult who walked away, and what is told to the hospitals about each patient's smoke exposure time and symptoms?"
       },
       {
         "time": "10-15 min",
-        "text": "The apparatus stops sideways across two lanes and a member reports shoulder pain; first radio report, scene protection before anyone unbelts, and how all members are checked before anyone is cleared back to the original incident."
+        "text": "The search finds no one else inside, but the cat is dead and the exposure home now has smoke in its attic. Who re-checks the exposure occupants, what exposure and symptom information goes into each patient report, and when does the fire marshal get the occupant statements?"
       },
       {
         "time": "15-20 min",
-        "text": "Next-day review: intersection approach speed, cab seatbelt use, tank load and handling, driver training, and never speculating about the other driver while the sheriff's investigation is open."
+        "text": "At the hospital, one adult is kept for observation and the infant is transferred for a higher level of care. What documentation must be complete before your crew clears, and what goes into the post incident review about self-evacuation assessment, occupant tracking, and animal rescue requests?"
       }
     ],
     "questions": [
       {
         "group": "Firefighters",
         "items": [
-          "Personal seatbelt check before the apparatus moves and how to call stop.",
-          "What the back step can see at an intersection that the driver cannot and how to call it out."
+          "With a quiet infant in a caregiver's arms, what do you check first, and what makes you upgrade that infant to an immediate transport?",
+          "When an occupant who self-evacuated walks away from your scene, what do you say and who do you tell before that person is lost to the count?"
         ]
       },
       {
         "group": "Officers",
         "items": [
-          "Word-for-word intersection call-out on a green light with one lane still moving.",
-          "Notifications in the first 30 minutes after a near-rollover with a member reporting pain, and who decides whether that member stays in service."
+          "How do you split the first crew between patient assessment, occupant accountability, and the first line without losing any of the three?",
+          "What exact information goes to the receiving hospitals for a smoke inhalation infant versus an adult, and who makes those calls?"
         ]
       }
     ],
     "teachingPoints": [
-      "A green light is not a cleared intersection; officer calls traffic by lane and driver slows until every lane is accounted for.",
-      "Seatbelts are a wheels-move check for every seat, any member can call stop.",
-      "A loaded pumper is top-heavy; hard braking plus a sharp correction is the rollover recipe, prevention lives in approach speed and lane discipline.",
-      "After any near-rollover or collision, protect the scene before stepping into live lanes and check every member before anyone self-clears.",
-      "Cause belongs to the investigating agency; the department review covers its own speed, belts, load, and training."
+      "Self-evacuation through smoke is an exposure, not a clearance: every fleeing occupant gets assessed, with infants and quiet patients assessed first because they decompensate without obvious distress.",
+      "One member owns the occupant count from arrival, including occupants who walk away, because a self-transported or wandering patient is how counts fail.",
+      "No occupant re-enters for animals, ever; the request goes to command and the answer is given once, kindly and finally.",
+      "Hospital reports carry exposure time, symptoms, and treatments for each patient, and occupant statements are preserved for the fire marshal before memories scatter.",
+      "Documentation and the occupant log are finished before the crew clears, not reconstructed at the station."
     ],
     "relatedSops": [
       {
-        "number": "600-02",
-        "title": "Response, Placement, And Company Functions"
+        "number": "600-01",
+        "title": "Incident Command System"
       },
       {
-        "number": "600-03",
-        "title": "Safety"
+        "number": "600-11",
+        "title": "Accountability System"
       },
       {
-        "number": "600-40",
-        "title": "Post-Incident Analysis (Pia)"
+        "number": "600-12",
+        "title": "Rehabilitation"
       }
     ]
   }
@@ -296,6 +293,108 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+{
+    "date": "November 13, 2026",
+    "updatedThrough": "November 13, 2026",
+    "sort": "2026-11-13-2",
+    "type": "Practical",
+    "topic": "Floor integrity and sounding in manufactured homes",
+    "title": "Sound It Before You Step: Floor Integrity in a Manufactured Home",
+    "summary": "Crews arriving at a simulated single-wide manufactured home fire assess floor integrity before and during entry, sound the floor and stay near walls and joists as they advance, check for fire below with the TIC, and stabilize in place and call a 3 Ws mayday at once if a simulated floor failure occurs. Tied to Amarillo Fire Department (TX), November 10, 2026, where a firefighter fell through the floor of a single-wide mobile home, a mayday was called, and the firefighter was removed and taken to a hospital; and to Moline Fire Department (IL), November 10, 2026, where a firefighter fell through a collapsing floor, self-rescued, and was not injured.",
+    "nfpa": [
+        "NFPA 1001",
+        "NFPA 1500",
+        "NFPA 1407"
+    ],
+    "sops": [
+        "SOP 600-06 — Size-Up And On-Scene Radio Reports",
+        "SOP 600-03 — Safety",
+        "SOP 600-28 — Mayday Operations"
+    ],
+    "complete": true,
+    "duration": "20-45 minutes",
+    "equipment": [
+        "Engine with full hose complement",
+        "One handline",
+        "TIC",
+        "Hand tools for sounding (axe or Halligan)",
+        "Marked training floor or prop floor section",
+        "Radios",
+        "Accountability board",
+        "Rehab supplies"
+    ],
+    "steps": [
+        "Officer briefs both November 10 floor failures out loud: in Amarillo a firefighter went through the floor of a single-wide with heavy fire showing, a mayday was called, and he came out by removal and went to a hospital; in Moline a firefighter went through a collapsing floor the same day and self-rescued with no injury. The point: the floor is a decision, not a given, and manufactured home floors fail early under fire below.",
+        "Pre-entry evolution: officer gives a first report naming manufactured home construction, fire location, and whether fire is suspected below the floor, assigns the TIC operator to check the floor and skirting line for heat below, and states whether entry is on the floor, along the walls, or not at all.",
+        "Sounding evolution: crew advances the handline sounding every step with a tool, staying near walls and over joists where possible, distributing weight low and wide, reporting floor condition (solid, spongy, or failed) by area before committing past each area.",
+        "Simulated failure evolution: on the officer's signal, one member simulates a floor failure in place: stop, stay still, keep weight spread, transmit a 3 Ws mayday at once (Who you are, What happened and what you need, Where you are), activate PASS, and the crew stabilizes and removes the member along the sound path already proven, without rushing onto the failed section.",
+        "Second-alarm and accountability evolution: officer declares the mayday on the radio, requests the additional alarm and EMS, and completes a PAR with every member accounted for by name and position before any crew re-enters.",
+        "Reset and rotate: reset with fire suspected below a different room, rotate officer, TIC, nozzle, and mayday-member roles, and close by restating the three floor stop triggers: spongy or sagging floor underfoot, TIC heat below the floor ahead, and any member unable to state the proven path back out."
+    ],
+    "safety": "Full PPE and SCBA on air for interior evolutions. The training floor prop is inspected before use and no real drop is built into it; the failure is simulated in place only. No member advances past an area the sounding member has called failed. Stop the evolution for any real floor or prop defect found.",
+    "benchmark": "First report with construction, fire-below check, and entry path stated within 2 minutes, floor condition reported by area before the crew commits past each area, 3 Ws mayday transmitted within 15 seconds of the simulated failure, simulated member removed along the proven path within 3 minutes, and a complete PAR within 2 minutes of the removal."
+},
+{
+    "date": "November 13, 2026",
+    "updatedThrough": "November 13, 2026",
+    "sort": "2026-11-13-1",
+    "type": "Tabletop",
+    "topic": "Self-evacuation assessment and occupant accountability",
+    "title": "Out the Door Into the Smoke: Assessing an Infant and Adults Who Self-Evacuated",
+    "summary": "Your crew arrives at a two-story multifamily Florida home with heavy smoke; two adults and an infant are fleeing through the smoke as you pull up, a cat is still inside, and the fire is threatening the exposure next door. Tied to Riverhead Fire Department (NY), November 12, 2026, where two adults and an infant were rushed to area hospitals for smoke inhalation evaluation after fleeing a multifamily home through heavy smoke; about 50 firefighters controlled the fire in about 45 minutes, a dog escaped uninjured, and a cat died inside.",
+    "nfpa": [
+        "NFPA 1500",
+        "NFPA 1561"
+    ],
+    "sops": [
+        "SOP 600-01 — Incident Command System",
+        "SOP 600-11 — Accountability System",
+        "SOP 600-12 — Rehabilitation"
+    ],
+    "complete": true,
+    "duration": "15-20 minutes",
+    "injects": [
+        {
+            "time": "0-5 min",
+            "text": "The adults and infant are in the front yard coughing, the infant is quiet, and neighbors say someone else may still be inside. Who assesses the infant first, what smoke inhalation signs change your transport decision for each patient, and who owns the occupant count while the first line goes in?"
+        },
+        {
+            "time": "5-10 min",
+            "text": "One adult says she feels fine and wants to go back in for the cat, and a second adult has already left toward a neighbor's car. What do you do about re-entry, who tracks the adult who walked away, and what is told to the hospitals about each patient's smoke exposure time and symptoms?"
+        },
+        {
+            "time": "10-15 min",
+            "text": "The search finds no one else inside, but the cat is dead and the exposure home now has smoke in its attic. Who re-checks the exposure occupants, what exposure and symptom information goes into each patient report, and when does the fire marshal get the occupant statements?"
+        },
+        {
+            "time": "15-20 min",
+            "text": "At the hospital, one adult is kept for observation and the infant is transferred for a higher level of care. What documentation must be complete before your crew clears, and what goes into the post incident review about self-evacuation assessment, occupant tracking, and animal rescue requests?"
+        }
+    ],
+    "questions": [
+        {
+            "group": "Firefighters",
+            "items": [
+                "With a quiet infant in a caregiver's arms, what do you check first, and what makes you upgrade that infant to an immediate transport?",
+                "When an occupant who self-evacuated walks away from your scene, what do you say and who do you tell before that person is lost to the count?"
+            ]
+        },
+        {
+            "group": "Officers",
+            "items": [
+                "How do you split the first crew between patient assessment, occupant accountability, and the first line without losing any of the three?",
+                "What exact information goes to the receiving hospitals for a smoke inhalation infant versus an adult, and who makes those calls?"
+            ]
+        }
+    ],
+    "teachingPoints": [
+        "Self-evacuation through smoke is an exposure, not a clearance: every fleeing occupant gets assessed, with infants and quiet patients assessed first because they decompensate without obvious distress.",
+        "One member owns the occupant count from arrival, including occupants who walk away, because a self-transported or wandering patient is how counts fail.",
+        "No occupant re-enters for animals, ever; the request goes to command and the answer is given once, kindly and finally.",
+        "Hospital reports carry exposure time, symptoms, and treatments for each patient, and occupant statements are preserved for the fire marshal before memories scatter.",
+        "Documentation and the occupant log are finished before the crew clears, not reconstructed at the station."
+    ]
+},
 {
     "date": "November 12, 2026",
     "updatedThrough": "November 12, 2026",
@@ -2180,7 +2279,7 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "November 12, 2026",
+  "updatedThrough": "November 13, 2026",
   "totals": {
     "lodd": {
       "total": 79,
@@ -2196,8 +2295,8 @@ const DASHBOARD_DATA = {
       "sub": "7 FLORIDA · 41 NATIONAL"
     },
     "mayday": {
-      "total": 90,
-      "sub": "84 VERIFIED · 6 UNVERIFIED"
+      "total": 91,
+      "sub": "85 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
       "total": 18,
@@ -2205,6 +2304,30 @@ const DASHBOARD_DATA = {
     }
   },
   "incidents": [
+{
+      "category": "mayday",
+      "state": "TX",
+      "sort": "2026-11-10",
+      "month": 11,
+      "department": "Amarillo Fire Department (TX)",
+      "date": "November 10, 2026",
+      "outcome": "A firefighter fell through the floor after entering a single-wide mobile home with heavy fire and smoke showing at 1520 Cleveland Street at about 8:15 PM; crews called a mayday, a second alarm was automatically dispatched, the firefighter was removed and taken to a hospital, and the department did not release injury details because the Fire Marshal's Office is investigating; the occupant was taken to a hospital by private vehicle with unknown injuries. Late-verified November 13, 2026. Source: Daily Safety Message, November 13, 2026, citing ABC 7 Amarillo and the department.",
+      "verification": "verified",
+      "sops": [
+            {
+                  "number": "600-28",
+                  "title": "Mayday Operations"
+            },
+            {
+                  "number": "600-13",
+                  "title": "Rapid Intervention Crew (Ric)"
+            },
+            {
+                  "number": "600-06",
+                  "title": "Size-Up And On-Scene Radio Reports"
+            }
+      ]
+},
 {
       "category": "rescue",
       "state": "IA",
@@ -8479,81 +8602,27 @@ const DASHBOARD_DATA = {
 },
   "daily": [
     {
-        "tag": "RESCUE",
-        "category": "rescue",
-        "state": "VA",
+        "tag": "MAYDAY",
+        "category": "mayday",
+        "state": "TX",
         "sort": "2026-11-10",
         "month": 11,
-        "department": "Hampton Division of Fire & Rescue (VA)",
+        "department": "Amarillo Fire Department (TX)",
         "date": "November 10, 2026",
-        "outcome": "Crews began an aggressive fire attack and search at a fire in the 0 block of Sherry Dell Drive at about 6:04 PM, rescued one adult resident during the search, rendered immediate medical care, and transferred the patient to a local hospital with life-threatening injuries; fire out at about 6:27 PM, cause undetermined. Source: Hampton Division of Fire & Rescue release, November 10, 2026.",
+        "outcome": "A firefighter fell through the floor after entering a single-wide mobile home with heavy fire and smoke showing at 1520 Cleveland Street at about 8:15 PM; crews called a mayday, a second alarm was automatically dispatched, the firefighter was removed and taken to a hospital, and the department did not release injury details because the Fire Marshal's Office is investigating; the occupant was taken to a hospital by private vehicle with unknown injuries. Late-verified November 13, 2026. Source: Daily Safety Message, November 13, 2026, citing ABC 7 Amarillo and the department.",
+        "verification": "verified",
         "sops": [
             {
-                "number": "600-02",
-                "title": "Response, Placement, And Company Functions"
+                "number": "600-28",
+                "title": "Mayday Operations"
+            },
+            {
+                "number": "600-13",
+                "title": "Rapid Intervention Crew (Ric)"
             },
             {
                 "number": "600-06",
                 "title": "Size-Up And On-Scene Radio Reports"
-            }
-        ]
-    },
-    {
-        "tag": "CRASH",
-        "category": "crash",
-        "severity": "serious",
-        "state": "NJ",
-        "sort": "2026-11-10",
-        "month": 11,
-        "department": "Ho-Ho-Kus Volunteer Fire Department (NJ)",
-        "date": "November 10, 2026",
-        "outcome": "A ladder truck responding with lights and sirens to a second-alarm structure fire on West Prospect Street collided with a Honda Fit at Franklin Turnpike and Wyckoff Avenue, Waldwick, on Tuesday afternoon; the car driver sustained serious injuries and was transported by Bergen County EMS; no firefighters were injured and the ladder truck sustained no visible damage; Waldwick Police investigating. Source: The Ridgewood Blog, November 10, 2026.",
-        "sops": [
-            {
-                "number": "600-02",
-                "title": "Response, Placement, And Company Functions"
-            },
-            {
-                "number": "600-03",
-                "title": "Safety"
-            }
-        ]
-    },
-    {
-        "tag": "CRASH",
-        "category": "crash",
-        "severity": "fatal",
-        "state": "PA",
-        "sort": "2026-11-09",
-        "month": 11,
-        "department": "Narberth Ambulance Paramedic Unit (PA)",
-        "date": "November 9, 2026",
-        "outcome": "A multi-vehicle collision involving an ambulance affiliated with the Lansdowne Fire Company, which was transporting a patient, and a Nissan Altima at North 63rd and Race streets, West Philadelphia, at about 6:00 PM; the patient was taken to a hospital and later pronounced dead; the Altima driver was treated for unknown injuries. Sources: WPVI via Firefighter Close Calls, November 10, 2026; CBS Philadelphia.",
-        "sops": [
-            {
-                "number": "600-02",
-                "title": "Response, Placement, And Company Functions"
-            },
-            {
-                "number": "600-03",
-                "title": "Safety"
-            }
-        ]
-    },
-    {
-        "tag": "LODD",
-        "category": "lodd",
-        "state": "WV",
-        "sort": "2026-11-08",
-        "month": 11,
-        "department": "Fellowsville Volunteer Fire Department (WV)",
-        "date": "November 8, 2026",
-        "outcome": "A firefighter and assistant chief died in the line of duty on Sunday afternoon; circumstances were not stated in the reports checked; not yet USFA-listed. Sources: Forever Cumberland, November 11, 2026; Bolyard Funeral Home obituary, November 10, 2026.",
-        "cause": "unknown",
-        "sops": [
-            {
-                "number": "600-34",
-                "title": "Serious Illness/Injury/Line Of Duty Death"
             }
         ]
     }
