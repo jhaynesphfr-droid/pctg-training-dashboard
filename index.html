@@ -146,7 +146,7 @@
       <article class="chart-card"><h3>LODDs by month</h3><p>Death count through <span class="updated-through-label"></span>; reports with approximate dates are placed in the reported month.</p><div class="chart-wrap"><canvas id="loddChart" role="img" aria-label="Bar chart of LODD records by month"></canvas></div></article>
       <article class="chart-card"><h3>Apparatus crashes by severity</h3><p>Fatal, serious-injury, and minor or other events through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="severityChart" role="img" aria-label="Bar chart of apparatus crashes by severity"></canvas></div></article>
       <article class="chart-card"><h3>Structure-fire rescues by month</h3><p>Linked structure-fire rescue incidents in this briefing dataset through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="rescueChart" role="img" aria-label="Bar chart of structure-fire rescue incidents by month"></canvas></div></article>
-      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>93 firefighter maydays total—87 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–October 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
+      <article class="chart-card"><h3>Firefighter maydays by month</h3><p>94 firefighter maydays total—88 verified and 6 unverified—through <span class="updated-through-label"></span>, including the validated Firefighter Mayday Survey monthly snapshots from March–October 2026.</p><div class="chart-wrap"><canvas id="maydayChart" role="img" aria-label="Bar chart of firefighter mayday incidents by month"></canvas></div></article>
       <article class="chart-card"><h3>Florida / national split</h3><p>Florida and national totals from the linked 2026 records through <span class="updated-through-label"></span>.</p><div class="chart-wrap"><canvas id="splitChart" role="img" aria-label="Grouped bar chart comparing Florida and national incident counts"></canvas></div><div class="legend"><span class="key"><i class="swatch"></i>Florida</span><span class="key"><i class="swatch national"></i>Outside Florida</span></div></article>
     </div>
   </section>
@@ -186,96 +186,101 @@
 <script>
 /* DAILY-DRILLS-START — Replace only this object during the morning drill update. */
 const DAILY_DRILLS = {
-  "updatedThrough": "November 24, 2026",
+  "updatedThrough": "November 25, 2026",
   "practical": {
-    "title": "Tanker Rollover Prevention: Rural Response Driving, Load Shift, and the Rollover Response",
+    "title": "Water on the Victim's Side: Coordinated Attack and Primary Search in a Single-Story Florida Home",
     "duration": "20–45 minutes",
-    "objective": "Crews practice the driving discipline that keeps a loaded tanker upright on rural roads and intersections, and the first actions if an apparatus rolls: protect the scene, account for the crew, and start care. Tied to a Pennsylvania tanker rollover on November 23, 2026 that seriously injured a firefighter, and an Alabama intersection crash on November 22, 2026 with minor injuries.",
-    "nfpa": "NFPA 1451 · NFPA 1500 · NFPA 1002",
+    "objective": "Crews coordinate the first handline and primary search in a single-story slab-on-grade Florida home so water protects the search and the victim comes out fast. Tied to the Prince William County Fire and Rescue (VA) house fire in Catharpin on November 24, 2026, where three firefighters were transported with minor burn injuries while crews removed an occupant.",
+    "nfpa": "NFPA 1001 · NFPA 1500 · NFPA 1700",
     "equipment": [
-      "Tanker or engine",
-      "Cone course",
+      "Engine with attack line",
+      "Residential prop",
+      "Thermal imaging camera (TIC)",
       "Radios",
-      "Stopwatch",
-      "Blocking apparatus"
+      "Victim manikin",
+      "Stopwatch"
     ],
     "steps": [
-      "Officer briefs both crashes out loud: a tanker rolled onto its side at night on a rural road, driver entrapped and flown out serious; a responding supervisor vehicle hit another vehicle at an intersection. Most apparatus crashes are speed, load shift, and intersections, not the fire.",
-      "Pre-response: seatbelt, load, and apparatus check stated out loud before moving.",
-      "Rural-road cone course: braking before curves, no sudden steering corrections, full stop at a marked blind intersection.",
-      "Intersection evolution: slow to a stop when the picture is not fully clear, officer calls traffic, proceed only on a clear call from both seats.",
-      "Rollover response: second crew blocks the roadway, confirms a PAR, simulates extrication access and trauma-center notification, states who investigates and who notifies command.",
-      "Reset: restock, log defects, each driver states one personal rule for tanker speed on rural roads."
+      "Officer briefs the Prince William County fire out loud: on November 24, 2026, at a house fire in Catharpin, three firefighters were transported with minor burn injuries while crews removed an occupant. The point of this drill: the handline and the search move as one plan, so water works on the fire while the search works on the victim's side of the home.",
+      "Size-up evolution: the officer gives the on-scene report on the single-story slab-on-grade home and states the attack and search assignments out loud before entry: who has the line, who has the search, and which side of the structure each crew works.",
+      "Line advance evolution: the attack crew advances the charged line and puts water on the fire so the stream protects the search path; the line does not outrun the search, and the search does not work ahead of the line's protection.",
+      "Search evolution: the search crew works the bedrooms with the TIC, stays oriented to the handline, and transmits a radio find report with the victim's location as soon as the victim is located.",
+      "Removal evolution: the attack and search crews remove the victim together through the closest exit, hand off to EMS at the door, and the officer confirms a PAR with every member accounted for.",
+      "Reset evolution: crews reset the prop and the lines, then every member's PPE and SCBA are checked for heat damage before the next run; any heat-damaged gear is reported and taken out of service."
     ],
-    "safety": "Seatbelts any time the apparatus moves, spotter for backing, course at or below posted limits, hard stop for any real traffic conflict.",
-    "benchmark": "Belt and load check before movement, full stop at the blind intersection, both-seat clear call, complete PAR plus trauma notification within the officer's window.",
+    "safety": "Full PPE and SCBA for every member in the prop, a backup crew posted at the door, no member ahead of the charged line without the officer's call, and a hard stop for any real burn complaint.",
+    "benchmark": "Water flowing before the search passes the door, the search complete with the find called on the radio, and the victim out with a PAR inside the officer's window.",
     "relatedSops": [
       {
-        "number": "600-02",
-        "title": "Response, Placement, And Company Functions"
-      },
-      {
-        "number": "600-35",
-        "title": "Apparatus Placement / Temporary"
+        "number": "600-06",
+        "title": "Size-Up And On-Scene Radio Reports"
       },
       {
         "number": "600-03",
         "title": "Safety"
+      },
+      {
+        "number": "600-02",
+        "title": "Response, Placement, And Company Functions"
       }
     ]
   },
   "tabletop": {
-    "title": "Firefighter Down, Medical: CPR on the Fireground, Rehab, and the Hoarding House",
+    "title": "Mayday for Chest Pain: The Anderson Township Fire",
     "duration": "15–20 minutes",
-    "scenario": "At a late-night three-alarm fire in a two-story home with hoarding conditions, a firefighter suffers a medical emergency and CPR is reported on scene; the firefighter is hospitalized in stable condition the next morning. Tied to a New Jersey township fire on November 23, 2026.",
-    "nfpa": "NFPA 1500 · NFPA 1561 · NFPA 1584",
+    "scenario": "At a two-alarm house fire down a long driveway with water relayed from a street hydrant, a firefighter transmits a mayday for chest pain, and a second firefighter is injured later in the incident. Tied to the Anderson Township Fire Department, Hamilton County, Ohio, fire on November 23, 2026, where both firefighters were transported and are expected to recover.",
+    "nfpa": "NFPA 1561 · NFPA 1500 · NFPA 1407",
     "injects": [
       {
         "time": "0-5 min",
-        "text": "A crew reports a firefighter down outside the structure and CPR in progress; who treats, who tells command, and what is transmitted in the first minute using the 3 W's: Who you are, What happened and what you need, Where you are."
+        "text": "A firefighter transmits a mayday for chest pain from inside the house. Run the read-back using the 3 W's: Who you are, What happened and what you need, Where you are. Who acknowledges the mayday, who owns it from that moment, and what does command announce to every crew on the fireground?"
       },
       {
         "time": "5-10 min",
-        "text": "Hoarding conditions confirmed and the fire goes to a third alarm; keep fire attack, accountability, and the medical response from competing for the same crews and channel."
+        "text": "The rescue, the relay, and the fire all need staffing at once: the RIC moves on the mayday, water is still relaying from a street hydrant down a long driveway, and the fire is still growing. Who staffs each job, what gets requested, and what gets dropped, in what order?"
       },
       {
         "time": "10-15 min",
-        "text": "The firefighter is transported in stable condition; notifications in order: command, department leadership, family support, crew relief, and what is not posted on social media."
+        "text": "A second firefighter is injured and transported. Command orders a PAR, moves crews through rehab, and reassesses the whole incident: does the operation continue as planned, change strategy, or stop, and who makes that call on what information?"
       },
       {
         "time": "15-20 min",
-        "text": "A news graphic reads FIREFIGHTER NEEDS CPR; what the department confirms or corrects, and what rehab and work-rest changes are made."
+        "text": "Both firefighters are transported and expected to recover, and after a two-hour loss stop the incident winds down. What gets documented from the mayday (times, transmissions, PARs, rehab records, transports), who owns the documentation, and what does the next-shift review cover before the next working fire?"
       }
     ],
     "questions": [
       {
         "group": "Firefighters",
         "items": [
-          "First three things when the member next to you goes down, and how to keep the PAR working while care is underway."
+          "Say the exact mayday transmission for a medical problem, chest pain rather than a collapse or a fall, using the 3 W's, and what you do for the firefighter while the rescue is coming.",
+          "When your crew is pulled off the line or the relay to work the rescue, what do you hand off, and to whom, so the water keeps moving?"
         ]
       },
       {
         "group": "Officers",
         "items": [
-          "How a fireground medical emergency differs from a mayday for a trapped firefighter, and where rehab, rotation, and early relief fit before someone goes down."
+          "How do you staff the rescue, the relay, and the fire attack at the same time at a two-alarm fire, and what do you request before you run short?",
+          "After the second injury, what do you order in the first five minutes (PAR, rehab, strategy), and who has to agree before crews go back to work?"
         ]
       }
     ],
     "teachingPoints": [
-      "A firefighter medical emergency is its own incident inside the incident: immediate care and a clear 3 W's transmission, a PAR that never stops, rehab and rotation set early especially in hoarding conditions that raise workload, and notifications and public statements that stay on verified facts."
+      "A medical mayday is still a mayday: transmit it early, read it back with the 3 W's, and run the full mayday play for it.",
+      "Relay water supply needs its own staffing and its own PAR; the relay does not run itself while crews are pulled into a rescue.",
+      "A second injury is a signal to stop and reassess: PAR, rehab, and a fresh look at the plan before anyone goes back in."
     ],
     "relatedSops": [
       {
-        "number": "600-12",
-        "title": "Rehabilitation"
-      },
-      {
         "number": "600-28",
-        "title": "Mayday Operations"
+        "title": "Mayday Operations Worksheet"
       },
       {
         "number": "600-13",
         "title": "Rapid Intervention Crew (Ric)"
+      },
+      {
+        "number": "600-12",
+        "title": "Rehabilitation"
       }
     ]
   }
@@ -284,6 +289,105 @@ const DAILY_DRILLS = {
 
 /* DRILL-LIBRARY-START — Prepend each morning’s practical and tabletop entries to this array. */
 const DRILL_LIBRARY = [
+{
+    "date": "November 25, 2026",
+    "updatedThrough": "November 25, 2026",
+    "sort": "2026-11-25-2",
+    "type": "Practical",
+    "topic": "Coordinated attack, primary search, and victim removal",
+    "title": "Water on the Victim's Side: Coordinated Attack and Primary Search in a Single-Story Florida Home",
+    "summary": "Crews coordinate the first handline and primary search in a single-story slab-on-grade Florida home so water protects the search and the victim comes out fast. Tied to the Prince William County Fire and Rescue (VA) house fire in Catharpin on November 24, 2026, where three firefighters were transported with minor burn injuries while crews removed an occupant.",
+    "nfpa": [
+        "NFPA 1001",
+        "NFPA 1500",
+        "NFPA 1700"
+    ],
+    "sops": [
+        "SOP 600-06 — Size-Up And On-Scene Radio Reports",
+        "SOP 600-03 — Safety",
+        "SOP 600-02 — Response, Placement, And Company Functions"
+    ],
+    "complete": true,
+    "duration": "20–45 minutes",
+    "equipment": [
+        "Engine with attack line",
+        "Residential prop",
+        "Thermal imaging camera (TIC)",
+        "Radios",
+        "Victim manikin",
+        "Stopwatch"
+    ],
+    "steps": [
+        "Officer briefs the Prince William County fire out loud: on November 24, 2026, at a house fire in Catharpin, three firefighters were transported with minor burn injuries while crews removed an occupant. The point of this drill: the handline and the search move as one plan, so water works on the fire while the search works on the victim's side of the home.",
+        "Size-up evolution: the officer gives the on-scene report on the single-story slab-on-grade home and states the attack and search assignments out loud before entry: who has the line, who has the search, and which side of the structure each crew works.",
+        "Line advance evolution: the attack crew advances the charged line and puts water on the fire so the stream protects the search path; the line does not outrun the search, and the search does not work ahead of the line's protection.",
+        "Search evolution: the search crew works the bedrooms with the TIC, stays oriented to the handline, and transmits a radio find report with the victim's location as soon as the victim is located.",
+        "Removal evolution: the attack and search crews remove the victim together through the closest exit, hand off to EMS at the door, and the officer confirms a PAR with every member accounted for.",
+        "Reset evolution: crews reset the prop and the lines, then every member's PPE and SCBA are checked for heat damage before the next run; any heat-damaged gear is reported and taken out of service."
+    ],
+    "safety": "Full PPE and SCBA for every member in the prop, a backup crew posted at the door, no member ahead of the charged line without the officer's call, and a hard stop for any real burn complaint.",
+    "benchmark": "Water flowing before the search passes the door, the search complete with the find called on the radio, and the victim out with a PAR inside the officer's window."
+},
+{
+    "date": "November 25, 2026",
+    "updatedThrough": "November 25, 2026",
+    "sort": "2026-11-25-1",
+    "type": "Tabletop",
+    "topic": "Medical mayday, RIC staffing, and rehab",
+    "title": "Mayday for Chest Pain: The Anderson Township Fire",
+    "summary": "At a two-alarm house fire down a long driveway with water relayed from a street hydrant, a firefighter transmits a mayday for chest pain, and a second firefighter is injured later in the incident. Tied to the Anderson Township Fire Department, Hamilton County, Ohio, fire on November 23, 2026, where both firefighters were transported and are expected to recover.",
+    "nfpa": [
+        "NFPA 1561",
+        "NFPA 1500",
+        "NFPA 1407"
+    ],
+    "sops": [
+        "SOP 600-28 — Mayday Operations Worksheet",
+        "SOP 600-13 — Rapid Intervention Crew (Ric)",
+        "SOP 600-12 — Rehabilitation"
+    ],
+    "complete": true,
+    "duration": "15–20 minutes",
+    "injects": [
+        {
+            "time": "0-5 min",
+            "text": "A firefighter transmits a mayday for chest pain from inside the house. Run the read-back using the 3 W's: Who you are, What happened and what you need, Where you are. Who acknowledges the mayday, who owns it from that moment, and what does command announce to every crew on the fireground?"
+        },
+        {
+            "time": "5-10 min",
+            "text": "The rescue, the relay, and the fire all need staffing at once: the RIC moves on the mayday, water is still relaying from a street hydrant down a long driveway, and the fire is still growing. Who staffs each job, what gets requested, and what gets dropped, in what order?"
+        },
+        {
+            "time": "10-15 min",
+            "text": "A second firefighter is injured and transported. Command orders a PAR, moves crews through rehab, and reassesses the whole incident: does the operation continue as planned, change strategy, or stop, and who makes that call on what information?"
+        },
+        {
+            "time": "15-20 min",
+            "text": "Both firefighters are transported and expected to recover, and after a two-hour loss stop the incident winds down. What gets documented from the mayday (times, transmissions, PARs, rehab records, transports), who owns the documentation, and what does the next-shift review cover before the next working fire?"
+        }
+    ],
+    "questions": [
+        {
+            "group": "Firefighters",
+            "items": [
+                "Say the exact mayday transmission for a medical problem, chest pain rather than a collapse or a fall, using the 3 W's, and what you do for the firefighter while the rescue is coming.",
+                "When your crew is pulled off the line or the relay to work the rescue, what do you hand off, and to whom, so the water keeps moving?"
+            ]
+        },
+        {
+            "group": "Officers",
+            "items": [
+                "How do you staff the rescue, the relay, and the fire attack at the same time at a two-alarm fire, and what do you request before you run short?",
+                "After the second injury, what do you order in the first five minutes (PAR, rehab, strategy), and who has to agree before crews go back to work?"
+            ]
+        }
+    ],
+    "teachingPoints": [
+        "A medical mayday is still a mayday: transmit it early, read it back with the 3 W's, and run the full mayday play for it.",
+        "Relay water supply needs its own staffing and its own PAR; the relay does not run itself while crews are pulled into a rescue.",
+        "A second injury is a signal to stop and reassess: PAR, rehab, and a fresh look at the plan before anyone goes back in."
+    ]
+},
 {
     "date": "November 24, 2026",
     "updatedThrough": "November 24, 2026",
@@ -3361,12 +3465,12 @@ const DRILL_LIBRARY = [
 
 /* DAILY-DATA-START — Replace this one object during the morning artifact update. */
 const DASHBOARD_DATA = {
-  "updatedThrough": "November 24, 2026",
+  "updatedThrough": "November 25, 2026",
   "totals": {
     "lodd": {
-      "total": 80,
-      "sub": "33 INCIDENT-RELATED · 38 MEDICAL · 9 CAUSE PENDING · 6 FLORIDA · 74 NATIONAL",
-      "note": "LODD count check: USFA lists 78 for 2026 while this dashboard counts 80; the difference reflects department and news recognized LODDs not yet USFA-listed, including the November 15, 2026 South Kingstown EMS captain, offset by earlier USFA listings not on this dashboard; backfill audit still open."
+      "total": 81,
+      "sub": "33 INCIDENT-RELATED · 38 MEDICAL · 10 CAUSE PENDING · 6 FLORIDA · 75 NATIONAL",
+      "note": "LODD count check: USFA lists 78 for 2026 while this dashboard counts 81; the difference reflects department and news recognized LODDs not yet USFA-listed, including the November 15, 2026 South Kingstown EMS captain and the November 24, 2026 Brookline firefighter, offset by earlier USFA listings not on this dashboard; backfill audit still open."
     },
     "crash": {
       "total": 58,
@@ -3377,15 +3481,67 @@ const DASHBOARD_DATA = {
       "sub": "7 FLORIDA · 53 NATIONAL"
     },
     "mayday": {
-      "total": 93,
-      "sub": "87 VERIFIED · 6 UNVERIFIED"
+      "total": 94,
+      "sub": "88 VERIFIED · 6 UNVERIFIED"
     },
     "closecall": {
-      "total": 21,
-      "sub": "6 FLORIDA · 15 NATIONAL"
+      "total": 22,
+      "sub": "6 FLORIDA · 16 NATIONAL"
     }
   },
   "incidents": [
+    {
+      "category": "lodd",
+      "state": "MA",
+      "sort": "2026-11-24",
+      "month": 11,
+      "department": "Brookline Fire Department (MA)",
+      "date": "November 24, 2026",
+      "outcome": "A firefighter from Engine Company 6 died in the line of duty; the department announced the death on November 24, 2026 and flags were ordered to half-staff; the cause has not yet been released; not yet USFA-listed.",
+      "cause": "unknown",
+      "sops": [
+        {
+          "number": "600-34",
+          "title": "Serious Illness/Injury/Line Of Duty Death"
+        }
+      ]
+    },
+    {
+      "category": "closecall",
+      "state": "VA",
+      "sort": "2026-11-24",
+      "month": 11,
+      "department": "Prince William County Fire and Rescue (VA)",
+      "date": "November 24, 2026",
+      "outcome": "At a house fire in Catharpin, three firefighters were transported with minor burn injuries while crews removed an occupant from the home.",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-03",
+          "title": "Safety"
+        }
+      ]
+    },
+    {
+      "category": "mayday",
+      "state": "OH",
+      "sort": "2026-11-23",
+      "month": 11,
+      "department": "Anderson Township Fire Department (OH)",
+      "date": "November 23, 2026",
+      "outcome": "A mayday was declared at a two-alarm house fire in Hamilton County; one firefighter was transported conscious with chest pain, and a second firefighter was injured later and transported; both are expected to recover.",
+      "verification": "verified",
+      "sops": [
+        {
+          "number": "600-28",
+          "title": "Mayday Operations Worksheet"
+        },
+        {
+          "number": "600-13",
+          "title": "Rapid Intervention Crew (Ric)"
+        }
+      ]
+    },
     {
       "category": "rescue",
       "state": "MS",
@@ -10021,21 +10177,21 @@ const DASHBOARD_DATA = {
     }
   ],
   "drill": {
-    "title": "Tanker Rollover Prevention: Rural Response Driving, Load Shift, and the Rollover Response",
-    "intro": "Crews practice the driving discipline that keeps a loaded tanker upright on rural roads and intersections, and the first actions if an apparatus rolls: protect the scene, account for the crew, and start care. Tied to a Pennsylvania tanker rollover on November 23, 2026 that seriously injured a firefighter, and an Alabama intersection crash on November 22, 2026 with minor injuries.",
+    "title": "Water on the Victim's Side: Coordinated Attack and Primary Search in a Single-Story Florida Home",
+    "intro": "Crews coordinate the first handline and primary search in a single-story slab-on-grade Florida home so water protects the search and the victim comes out fast. Tied to the Prince William County Fire and Rescue (VA) house fire in Catharpin on November 24, 2026, where three firefighters were transported with minor burn injuries while crews removed an occupant.",
     "steps": [
-      "Officer briefs both crashes out loud: a tanker rolled onto its side at night on a rural road, driver entrapped and flown out serious; a responding supervisor vehicle hit another vehicle at an intersection. Most apparatus crashes are speed, load shift, and intersections, not the fire.",
-      "Pre-response: seatbelt, load, and apparatus check stated out loud before moving.",
-      "Rural-road cone course: braking before curves, no sudden steering corrections, full stop at a marked blind intersection.",
-      "Intersection evolution: slow to a stop when the picture is not fully clear, officer calls traffic, proceed only on a clear call from both seats.",
-      "Rollover response: second crew blocks the roadway, confirms a PAR, simulates extrication access and trauma-center notification, states who investigates and who notifies command.",
-      "Reset: restock, log defects, each driver states one personal rule for tanker speed on rural roads."
+      "Officer briefs the Prince William County fire out loud: on November 24, 2026, at a house fire in Catharpin, three firefighters were transported with minor burn injuries while crews removed an occupant. The point of this drill: the handline and the search move as one plan, so water works on the fire while the search works on the victim's side of the home.",
+      "Size-up evolution: the officer gives the on-scene report on the single-story slab-on-grade home and states the attack and search assignments out loud before entry: who has the line, who has the search, and which side of the structure each crew works.",
+      "Line advance evolution: the attack crew advances the charged line and puts water on the fire so the stream protects the search path; the line does not outrun the search, and the search does not work ahead of the line's protection.",
+      "Search evolution: the search crew works the bedrooms with the TIC, stays oriented to the handline, and transmits a radio find report with the victim's location as soon as the victim is located.",
+      "Removal evolution: the attack and search crews remove the victim together through the closest exit, hand off to EMS at the door, and the officer confirms a PAR with every member accounted for.",
+      "Reset evolution: crews reset the prop and the lines, then every member's PPE and SCBA are checked for heat damage before the next run; any heat-damaged gear is reported and taken out of service."
     ],
-    "nfpa": "NFPA 1451 · NFPA 1500 · NFPA 1002",
+    "nfpa": "NFPA 1001 · NFPA 1500 · NFPA 1700",
     "relatedSops": [
-      "SOP 600-02 — Response, Placement, And Company Functions",
-      "SOP 600-35 — Apparatus Placement / Temporary",
-      "SOP 600-03 — Safety"
+      "SOP 600-06 — Size-Up And On-Scene Radio Reports",
+      "SOP 600-03 — Safety",
+      "SOP 600-02 — Response, Placement, And Company Functions"
     ]
   },
   "daily": []
